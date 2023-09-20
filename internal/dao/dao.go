@@ -6,6 +6,7 @@ import (
 	"github.com/go-redis/redis/extra/redisotel"
 	"github.com/go-redis/redis/v8"
 	"github.com/google/wire"
+	"github.com/jassue/gin-wire/app/service"
 	"github.com/sony/sonyflake"
 	"go-web-wire-starter/config"
 	"go-web-wire-starter/util/path"
@@ -141,4 +142,29 @@ func NewRedis(c *config.Configuration, gLog *zap.Logger) *redis.Client {
 	}
 
 	return client
+}
+
+// 在上下文中存储数据库事务连接的键
+type contextTxKey struct{}
+
+// 执行事务，如果出现错误就回滚
+func (d *Data) ExecTx(ctx context.Context, fn func(ctx context.Context) error) error {
+	return d.db.WithContext(ctx).Transaction(func(tx *gorm.DB) error {
+		ctx = context.WithValue(ctx, contextTxKey{}, tx)
+		return fn(ctx)
+	})
+}
+
+// 获取普通的数据库连接
+func (d *Data) DB(ctx context.Context) *gorm.DB {
+	tx, ok := ctx.Value(contextTxKey{}).(*gorm.DB)
+	if ok {
+		return tx
+	}
+	return d.db
+}
+
+// NewTransaction .
+func NewTransaction(d *Data) service.Transaction {
+	return d
 }
