@@ -1,0 +1,92 @@
+internal: # 应用基本配置
+  env: local # 环境名称
+  port: 8080 # 服务监听端口号
+  app_name: online-practice-system # 应用名称
+  app_url: http://localhost # 应用域名
+
+log:  # 日志配置
+  level: info # 日志等级
+  root_dir: ./storage/logs # 日志根目录
+  filename: app.log # 日志文件名称
+  format: # 写入格式 可选json
+  show_line: true # 是否显示调用行
+  max_backups: 3 # 旧文件的最大个数
+  max_size: 500 # 日志文件最大大小（MB）
+  max_age: 28 # 旧文件的最大保留天数
+  compress: true # 是否压缩
+
+database:  # 数据库配置
+  driver: mysql # 数据库驱动
+  host: 127.0.0.1 # 域名
+  port: 3306 # 端口号
+  database: go_test # 数据库名称
+  table_prefix: # 表前缀
+  username: root # 用户名
+  password: lsj20030222 # 密码
+  charset: utf8mb4 # 编码格式
+  max_idle_conns: 10 # 连接池的最大空闲连接数,空闲连接是指没有被使用的连接
+  max_open_conns: 100 # 连接池的最大打开连接数,打开连接是指当前正在被请求使用的连接数量
+  log_mode: info # 日志级别
+  enable_file_log_writer: true # 是否启用日志文件
+  log_filename: sql.log # 日志文件名称
+
+jwt:  # jwt配置
+  secret: 3Bde3BGEbYqtqyEUzW3ry8jKFcaPH17fRmTmqE7MDr05Lwj95uruRKrrkb44TJ4s # jwt密钥
+  jwt_ttl: 43200  # jwt过期时间
+  jwt_blacklist_grace_period: 10 # jwt黑名单 宽限期 时长（秒）
+  refresh_grace_period: 1800 # jwt续签期限值（秒），当jwt过期时间小于续签期限值时，可以续签，防止多次续签
+
+redis: # redis配置
+  host: 127.0.0.1 # ip
+  port: 6379 # 端口号
+  db: 0 # 数据库
+  password: # 密码
+
+storage: # 存储配置
+  default: tecent_cos # 默认驱动, 可选 local(本地存储), ali_oss(阿里云Oss存储), qi_niu(七牛云存储)，tecent_cos(腾讯云COS存储)
+  img_max_size: 3 # 图片上传最大大小（MB），不设置默认2MB
+  drivers:
+    local:
+      root_dir: ./storage/app # 本地存储根目录
+      app_url: http://localhost:8080/storage # 本地图片 url 前部
+    ali_oss:
+      access_key_id:
+      access_key_secret:
+      bucket: # 存储空间名称
+      endpoint: # 地域节点
+      is_ssl: true # 是否使用 https 协议
+      is_private: false # 是否私有读
+    qi_niu:
+      access_key:
+      bucket:
+      domain:
+      secret_key:
+      is_ssl: true
+      is_private: false
+    tecent_cos:
+      secret_id: AKID3zhCTVJtFMErGQLL8h071g6KMCn9dvzq
+      secret_key: iEWbVChz3vYzEAtdHK6qQoxrY5OSItGO
+      bucket_url: https://cos-1314434715.cos.ap-chengdu.myqcloud.com
+      bucket: cos-1314434715
+      domain: ap-chengdu
+      is_ssl: true
+      is_private: false
+
+email: # 邮件配置
+  sender_name: kitie # 发件人名称
+  sender_email: 1321928757@qq.com # 发件人邮箱
+  sender_password: xmysseozfhnsiieb # 发件人密码
+  host: smtp.qq.com # smtp服务器地址
+  port: 587 # smtp服务器端口
+  max_connection: 4 # 最大并发SMTP连接数
+  max_timeout: 20  # 最大超时时间（s）
+
+captcha: #验证码配置
+  email_number: 4 #邮箱验证码位数
+  email_timeout: 300 #  邮箱验证码有效期(秒)
+  figure_number: 4 #图形验证码位数
+  figure_timeout: 120 # 图形验证码有效期(秒)
+
+
+
+

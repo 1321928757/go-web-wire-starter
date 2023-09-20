@@ -1,0 +1,147 @@
+
+2023/09/19 19:03:49 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:28 Error 1146 (42S02): Table 'go_test.users' doesn't exist
+[7.695ms] [rows:0] SELECT * FROM `users` WHERE `users`.`mobile` = '19173898919' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2023/09/19 19:03:49 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:47 Error 1146 (42S02): Table 'go_test.users' doesn't exist
+[1.152ms] [rows:0] INSERT INTO `users` (`name`,`mobile`,`password`,`created_at`,`updated_at`,`deleted_at`,`id`) VALUES ('张11四1111','19173898919','$2a$04$7NqSC4Tp8os3BBD6TS24Zu1Pu0OoW/9Pm/RVR6vvnUbXp2y2abA/i','2023-09-19 19:03:49.52','2023-09-19 19:03:49.52',NULL,479143581169242881)
+
+2023/09/19 19:06:26 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:28 Error 1146 (42S02): Table 'go_test.users' doesn't exist
+[0.514ms] [rows:0] SELECT * FROM `users` WHERE `users`.`mobile` = '19173898919' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2023/09/19 19:06:26 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:47 Error 1146 (42S02): Table 'go_test.users' doesn't exist
+[0.716ms] [rows:0] INSERT INTO `users` (`name`,`mobile`,`password`,`created_at`,`updated_at`,`deleted_at`,`id`) VALUES ('张11四1111','19173898919','$2a$04$nMDb/qAxzzidOpreQ5de9.smXqwb6LGc7Dr2CZqQP0m6/91pyO0sq','2023-09-19 19:06:26.795','2023-09-19 19:06:26.795',NULL,479143845024518913)
+
+2023/09/19 19:08:36 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:28 record not found
+[3.537ms] [rows:0] SELECT * FROM `user` WHERE `user`.`mobile` = '19173898919' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/09/19 19:08:36 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:47 Error 1264 (22003): Out of range value for column 'id' at row 1
+[1.544ms] [rows:0] INSERT INTO `user` (`name`,`mobile`,`password`,`created_at`,`updated_at`,`deleted_at`,`id`) VALUES ('张11四1111','19173898919','$2a$04$n3TLh8cpU.Mh0Au.82oa3.p68COLJbooZSylJUa.VxOR.3eETFzI.','2023-09-19 19:08:36.271','2023-09-19 19:08:36.271',NULL,479144062239134465)
+
+2023/09/19 19:13:16 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:28 record not found
+[1.260ms] [rows:0] SELECT * FROM `user` WHERE `user`.`mobile` = '19173898919' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/09/19 19:13:16 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:47
+[2.649ms] [rows:1] INSERT INTO `user` (`name`,`mobile`,`password`,`created_at`,`updated_at`,`deleted_at`,`id`) VALUES ('张11四1111','19173898919','$2a$04$TPraOyYpav16JMW0KygiquLCJWxZtkJGwg9rw/cak6tmiK39b.NPe','2023-09-19 19:13:16.96','2023-09-19 19:13:16.96',NULL,479144533175587585)
+
+2023/09/19 19:13:29 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:28
+[0.880ms] [rows:1] SELECT * FROM `user` WHERE `user`.`mobile` = '19173898919' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/09/19 19:13:50 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:28 record not found
+[1.247ms] [rows:0] SELECT * FROM `user` WHERE `user`.`mobile` = '19173898929' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/09/19 19:13:50 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:47
+[3.056ms] [rows:1] INSERT INTO `user` (`name`,`mobile`,`password`,`created_at`,`updated_at`,`deleted_at`,`id`) VALUES ('张11四1111','19173898929','$2a$04$1lMoymsNap19XC2sTWnJ3uT6OAGLh0gO6T7zLzgAH1AsYF7Xb7Ewq','2023-09-19 19:13:50.305','2023-09-19 19:13:50.305',NULL,479144589110825729)
+
+2023/09/19 19:17:04 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:28 record not found
+[1.401ms] [rows:0] SELECT * FROM `user` WHERE `user`.`mobile` = '19173898939' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/09/19 19:17:04 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:47
+[1.643ms] [rows:1] INSERT INTO `user` (`name`,`mobile`,`password`,`created_at`,`updated_at`,`deleted_at`,`id`) VALUES ('张11四1111','19173898939','$2a$04$.rOTz08kB6b/iT3lcW8.4ObvBaYVaRtnIh9mOq4JGEROVyWb2lR0i','2023-09-19 19:17:04.551','2023-09-19 19:17:04.551',NULL,479144915008246529)
+
+2023/09/19 19:17:36 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:28 record not found
+[1.254ms] [rows:0] SELECT * FROM `user` WHERE `user`.`mobile` = '19273898939' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/09/19 19:17:36 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:47
+[2.246ms] [rows:1] INSERT INTO `user` (`name`,`mobile`,`password`,`created_at`,`updated_at`,`deleted_at`,`id`) VALUES ('张11四1111','19273898939','$2a$04$yTYdgzreXFDx7w9pxRQsdefEp.V95RlO0nY7m4s4bf.f8QwSwNI22','2023-09-19 19:17:36.421','2023-09-19 19:17:36.421',NULL,479144968477233921)
+
+2023/09/19 19:17:52 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:28
+[1.119ms] [rows:1] SELECT * FROM `user` WHERE `user`.`mobile` = '19273898939' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/09/19 19:18:27 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:28 record not found
+[1.241ms] [rows:0] SELECT * FROM `user` WHERE `user`.`mobile` = '19273798939' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/09/19 19:18:27 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:47
+[2.827ms] [rows:1] INSERT INTO `user` (`name`,`mobile`,`password`,`created_at`,`updated_at`,`deleted_at`,`id`) VALUES ('张11四1111','19273798939','$2a$04$j7M25uPinOoCZI4qnmE22.31jdnvH8qqF/8XKs0vWbFsjP5jjSLrm','2023-09-19 19:18:27.347','2023-09-19 19:18:27.347',NULL,479145053906817793)
+
+2023/09/19 19:18:36 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:28
+[1.178ms] [rows:1] SELECT * FROM `user` WHERE `user`.`mobile` = '19273798939' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/09/19 19:18:40 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:28 record not found
+[0.740ms] [rows:0] SELECT * FROM `user` WHERE `user`.`mobile` = '19373798939' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/09/19 19:18:40 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:47
+[2.285ms] [rows:1] INSERT INTO `user` (`name`,`mobile`,`password`,`created_at`,`updated_at`,`deleted_at`,`id`) VALUES ('张11四1111','19373798939','$2a$04$./.OqFgAAUU02MFwTcj4.eGbZf4EfQdDwgk2wd1kwRiMbJrlNvIje','2023-09-19 19:18:40.123','2023-09-19 19:18:40.123',NULL,479145075348099841)
+
+2023/09/19 19:19:00 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:28 record not found
+[1.303ms] [rows:0] SELECT * FROM `user` WHERE `user`.`mobile` = '19373798949' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/09/19 19:19:00 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:47
+[1.758ms] [rows:1] INSERT INTO `user` (`name`,`mobile`,`password`,`created_at`,`updated_at`,`deleted_at`,`id`) VALUES ('张11四1111','19373798949','$2a$04$5jQBYYeh.yCnlIzIlNgy3.ZfkagILTtDk8AlPUhqVMfonGHW69bVm','2023-09-19 19:19:00.179','2023-09-19 19:19:00.179',NULL,479145108986417921)
+
+2023/09/19 19:19:28 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:28
+[1.207ms] [rows:1] SELECT * FROM `user` WHERE `user`.`mobile` = '19373798949' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/09/19 19:19:32 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:28 record not found
+[1.390ms] [rows:0] SELECT * FROM `user` WHERE `user`.`mobile` = '19373798940' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/09/19 19:19:32 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:47
+[2.479ms] [rows:1] INSERT INTO `user` (`name`,`mobile`,`password`,`created_at`,`updated_at`,`deleted_at`,`id`) VALUES ('张11四1111','19373798940','$2a$04$YViolkaKn5gAT2SRYGl6au8n6zOoVhSZtSpk7ozvCG268Z18BDdi2','2023-09-19 19:19:32.572','2023-09-19 19:19:32.572',NULL,479145163344597761)
+
+2023/09/19 19:20:03 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:28
+[1.311ms] [rows:1] SELECT * FROM `user` WHERE `user`.`mobile` = '19373798940' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/09/19 19:20:07 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:28 record not found
+[1.237ms] [rows:0] SELECT * FROM `user` WHERE `user`.`mobile` = '19374798940' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/09/19 19:20:07 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:47
+[3.405ms] [rows:1] INSERT INTO `user` (`name`,`mobile`,`password`,`created_at`,`updated_at`,`deleted_at`,`id`) VALUES ('张11四1111','19374798940','$2a$04$F4oWEPOmQlJfjxii4zDL6u2giBhHyO743A01eJV5P2R4SBEDeLXaa','2023-09-19 19:20:07.311','2023-09-19 19:20:07.311',NULL,479145221628646145)
+
+2023/09/19 19:22:18 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:28 record not found
+[0.550ms] [rows:0] SELECT * FROM `user` WHERE `user`.`mobile` = '19374798941' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/09/19 19:22:18 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:47
+[3.195ms] [rows:1] INSERT INTO `user` (`name`,`mobile`,`password`,`created_at`,`updated_at`,`deleted_at`,`id`) VALUES ('张11四1111','19374798941','$2a$04$qtXKdvWhenN.87f46K7bXOvQEugGfyKVNsPEXoz8pBaIWZGYXRy2u','2023-09-19 19:22:18.65','2023-09-19 19:22:18.65',NULL,479145441963823873)
+
+2023/09/19 19:23:41 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:28
+[1.087ms] [rows:1] SELECT * FROM `user` WHERE `user`.`mobile` = '19374798941' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/09/19 19:23:45 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:28 record not found
+[1.427ms] [rows:0] SELECT * FROM `user` WHERE `user`.`mobile` = '19374798944' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/09/19 19:23:45 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:47
+[2.662ms] [rows:1] INSERT INTO `user` (`name`,`mobile`,`password`,`created_at`,`updated_at`,`deleted_at`,`id`) VALUES ('张11四1111','19374798944','$2a$04$cGNj5f578N7ARU1po.BZJO/CSbyrNbjvwJeNeUyIS49kNSfAqqnUG','2023-09-19 19:23:45.027','2023-09-19 19:23:45.027',NULL,479145586885415681)
+
+2023/09/19 19:23:56 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:28 record not found
+[0.502ms] [rows:0] SELECT * FROM `user` WHERE `user`.`mobile` = '19374798945' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/09/19 19:23:56 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:47
+[2.253ms] [rows:1] INSERT INTO `user` (`name`,`mobile`,`password`,`created_at`,`updated_at`,`deleted_at`,`id`) VALUES ('张11四1111','19374798945','$2a$04$.CJgAy53bQdZjsPHJaMBZOei8Jy6untQPhs7GIA2NNVo5.nDTTY9u','2023-09-19 19:23:56.704','2023-09-19 19:23:56.704',NULL,479145606481203969)
+
+2023/09/19 19:24:01 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:28 record not found
+[0.503ms] [rows:0] SELECT * FROM `user` WHERE `user`.`mobile` = '19374798946' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/09/19 19:24:01 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:47
+[1.035ms] [rows:1] INSERT INTO `user` (`name`,`mobile`,`password`,`created_at`,`updated_at`,`deleted_at`,`id`) VALUES ('张11四1111','19374798946','$2a$04$mcLz52U4kVMUm5HX3j6oZu7/fZ0BVdDPYURCKXd5KxsPp4SNMbuxO','2023-09-19 19:24:01.787','2023-09-19 19:24:01.787',NULL,479145615004029697)
+
+2023/09/19 19:24:15 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:28
+[0.711ms] [rows:1] SELECT * FROM `user` WHERE `user`.`mobile` = '19374798946' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/09/19 19:24:19 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:28 record not found
+[1.051ms] [rows:0] SELECT * FROM `user` WHERE `user`.`mobile` = '19374798947' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/09/19 19:24:19 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:47
+[2.207ms] [rows:1] INSERT INTO `user` (`name`,`mobile`,`password`,`created_at`,`updated_at`,`deleted_at`,`id`) VALUES ('张11四1111','19374798947','$2a$04$PLMtLz6il6ViE3hNF39dUOwl9U/vaT.KmXJu3ydDG0RrS35jm7dbm','2023-09-19 19:24:19.718','2023-09-19 19:24:19.718',NULL,479145645085577985)
+
+2023/09/19 19:28:19 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:28
+[0.605ms] [rows:1] SELECT * FROM `user` WHERE `user`.`mobile` = '19374798947' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/09/20 09:57:10 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:28
+[40.663ms] [rows:1] SELECT * FROM `user` WHERE `user`.`mobile` = '19374798947' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/09/20 10:09:44 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:28
+[1.236ms] [rows:1] SELECT * FROM `user` WHERE `user`.`mobile` = '19374798947' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/09/20 10:09:52 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:19
+[2.268ms] [rows:1] SELECT * FROM `user` WHERE `user`.`id` = 479145645085577985 AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/09/20 10:36:45 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:24
+[4.266ms] [rows:1] SELECT * FROM `user` WHERE `user`.`id` = 479145645085577985 AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/09/20 10:39:17 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:33
+[1.682ms] [rows:1] SELECT * FROM `user` WHERE `user`.`mobile` = '19374798947' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/09/20 10:40:15 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:33
+[3.546ms] [rows:1] SELECT * FROM `user` WHERE `user`.`mobile` = '19374798947' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/09/20 10:41:08 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:33
+[1.937ms] [rows:1] SELECT * FROM `user` WHERE `user`.`mobile` = '19374798947' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1

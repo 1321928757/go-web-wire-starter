@@ -1,0 +1,2462 @@
+{"level":".info","ts":"2023-09-18 09:32:00.420","msg":"http server started"}
+{"level":".info","ts":"2023-09-18 09:32:54.644","msg":"http server has been stop"}
+{"level":".info","ts":"2023-09-18 09:32:54.645","msg":"closing the data resources"}
+{"level":".info","ts":"2023-09-18 09:32:55.692","msg":"http server started"}
+{"level":".info","ts":"2023-09-18 09:33:04.850","msg":"http server has been stop"}
+{"level":".info","ts":"2023-09-18 09:33:04.850","msg":"closing the data resources"}
+{"level":".info","ts":"2023-09-18 09:33:05.898","msg":"http server started"}
+{"level":".info","ts":"2023-09-18 09:34:12.847","msg":"http server has been stop"}
+{"level":".info","ts":"2023-09-18 09:34:12.848","msg":"closing the data resources"}
+{"level":".info","ts":"2023-09-18 09:34:17.681","msg":"http server started"}
+{"level":".info","ts":"2023-09-18 09:35:40.132","msg":"http server has been stop"}
+{"level":".info","ts":"2023-09-18 09:35:40.132","msg":"closing the data resources"}
+{"level":".info","ts":"2023-09-18 09:35:41.162","msg":"http server started"}
+{"level":".info","ts":"2023-09-18 09:36:56.416","msg":"http server has been stop"}
+{"level":".info","ts":"2023-09-18 09:36:56.416","msg":"closing the data resources"}
+{"level":".info","ts":"2023-09-18 09:37:01.125","msg":"http server started"}
+{"level":".info","ts":"2023-09-18 09:37:48.629","msg":"http server has been stop"}
+{"level":".info","ts":"2023-09-18 09:37:48.629","msg":"closing the data resources"}
+{"level":".info","ts":"2023-09-18 09:37:53.163","msg":"http server started"}
+{"level":".info","ts":"2023-09-18 09:39:01.898","msg":"http server has been stop"}
+{"level":".info","ts":"2023-09-18 09:39:01.899","msg":"closing the data resources"}
+{"level":".info","ts":"2023-09-18 09:39:06.679","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-18 09:44:11.637","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-18 09:44:11.637","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-18 09:44:12.769","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-18 10:31:04.696","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-18 10:31:04.698","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-18 10:31:10.330","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-18 10:58:47.769","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-18 10:58:47.769","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-19 11:39:23.273","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-19 11:39:56.390","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-19 11:39:56.390","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-19 11:39:57.110","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-19 11:40:20.662","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-19 11:40:20.662","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-19 11:40:21.420","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-19 11:41:18.238","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-19 11:41:18.239","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-19 11:41:18.986","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-19 11:42:26.707","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-19 11:42:26.708","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-19 19:00:34.381","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-19 19:00:56.430","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-19 19:00:56.430","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-19 19:01:00.075","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-19 19:05:12.288","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-19 19:05:12.289","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-19 19:06:24.437","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-19 19:08:30.249","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-19 19:08:30.249","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-19 19:08:33.949","msg":"http server started"}
+
+
+[31m2023/09/19 19:13:16 [Recovery] 2023/09/19 - 19:13:16 panic recovered:
+POST /user/register HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 86
+Content-Type: application/json
+Postman-Token: 33733f3f-c14d-4d16-b9bc-436da27d7ce3
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0x75b9c6)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0x75b996)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/user_service.go:45 (0x119df9f)
+	(*UserService).Register: println(err.Error())
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/handler/user_handler.go:39 (0x119e232)
+	(*UserHandler).Register: user, err := u.userService.Register(c, &form)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xc7aae1)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0xc7aacc)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xc79c06)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0xc79be9)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xc78caa)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xc78931)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xc7845c)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0xa10715)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0xa0bc31)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0x777d40)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-19 19:13:26.042","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-19 19:13:26.042","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-19 19:13:26.905","msg":"http server started"}
+
+
+[31m2023/09/19 19:13:50 [Recovery] 2023/09/19 - 19:13:50 panic recovered:
+POST /user/register HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 86
+Content-Type: application/json
+Postman-Token: 8f6097c8-dfd9-42d4-99df-15fa8d9d2d31
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0x75b9c6)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0x75b996)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/user_service.go:45 (0x119df9f)
+	(*UserService).Register: println(err.Error())
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/handler/user_handler.go:39 (0x119e232)
+	(*UserHandler).Register: user, err := u.userService.Register(c, &form)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xc7aae1)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0xc7aacc)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xc79c06)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0xc79be9)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xc78caa)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xc78931)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xc7845c)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0xa10715)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0xa0bc31)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0x777d40)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-19 19:16:54.483","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-19 19:16:54.483","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-19 19:16:58.376","msg":"http server started"}
+
+
+[31m2023/09/19 19:17:04 [Recovery] 2023/09/19 - 19:17:04 panic recovered:
+POST /user/register HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 86
+Content-Type: application/json
+Postman-Token: 2e397e5e-9c06-413e-bddf-a4c793e4800c
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0x9bb9c6)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0x9bb996)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/user_service.go:45 (0x13fdf9f)
+	(*UserService).Register: println(err.Error())
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/handler/user_handler.go:42 (0x13fe2a4)
+	(*UserHandler).Register: user, err := u.userService.Register(c, &form)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xedaae1)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0xedaacc)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xed9c06)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0xed9be9)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xed8caa)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xed8931)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xed845c)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0xc70715)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0xc6bc31)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0x9d7d40)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-19 19:17:29.199","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-19 19:17:29.200","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-19 19:17:32.955","msg":"http server started"}
+
+
+[31m2023/09/19 19:17:36 [Recovery] 2023/09/19 - 19:17:36 panic recovered:
+POST /user/register HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 86
+Content-Type: application/json
+Postman-Token: 8181b3f7-f384-4d31-97dc-dd3bc15f4933
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0x40b9c6)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0x40b996)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/user_service.go:45 (0xe4df9f)
+	(*UserService).Register: println(err.Error())
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/handler/user_handler.go:38 (0xe4e232)
+	(*UserHandler).Register: user, err := u.userService.Register(c, &form)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x92aae1)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0x92aacc)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x929c06)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0x929be9)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x928caa)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0x928931)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0x92845c)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0x6c0715)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0x6bbc31)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0x427d40)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-19 19:17:44.339","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-19 19:17:44.340","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-19 19:17:45.188","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-19 19:18:15.050","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-19 19:18:15.050","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-19 19:18:18.839","msg":"http server started"}
+
+
+[31m2023/09/19 19:18:27 [Recovery] 2023/09/19 - 19:18:27 panic recovered:
+POST /user/register HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 86
+Content-Type: application/json
+Postman-Token: 1c3a7346-24b6-49ea-94a2-ea4e8d3ddbeb
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0x8db9c6)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0x8db996)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/user_service.go:45 (0x131df9f)
+	(*UserService).Register: println(err.Error())
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/handler/user_handler.go:38 (0x131e232)
+	(*UserHandler).Register: user, err := u.userService.Register(c, &form)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xdfaae1)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0xdfaacc)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xdf9c06)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0xdf9be9)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xdf8caa)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xdf8931)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xdf845c)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0xb90715)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0xb8bc31)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0x8f7d40)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-19 19:18:32.887","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-19 19:18:32.887","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-19 19:18:33.792","msg":"http server started"}
+
+
+[31m2023/09/19 19:18:40 [Recovery] 2023/09/19 - 19:18:40 panic recovered:
+POST /user/register HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 86
+Content-Type: application/json
+Postman-Token: ab9cfd6b-0828-43d8-99eb-92ce3256dcc8
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0x8db9c6)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0x8db996)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/user_service.go:45 (0x131df9f)
+	(*UserService).Register: println(err.Error())
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/handler/user_handler.go:38 (0x131e232)
+	(*UserHandler).Register: user, err := u.userService.Register(c, &form)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xdfaae1)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0xdfaacc)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xdf9c06)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0xdf9be9)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xdf8caa)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xdf8931)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xdf845c)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0xb90715)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0xb8bc31)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0x8f7d40)
+	goexit: BYTE	$0x90	// NOP
+[0m
+
+
+[31m2023/09/19 19:19:00 [Recovery] 2023/09/19 - 19:19:00 panic recovered:
+POST /user/register HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 86
+Content-Type: application/json
+Postman-Token: bc96b559-7225-40df-a82e-5756fcf285b8
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0x8db9c6)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0x8db996)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/user_service.go:45 (0x131df9f)
+	(*UserService).Register: println(err.Error())
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/handler/user_handler.go:38 (0x131e232)
+	(*UserHandler).Register: user, err := u.userService.Register(c, &form)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xdfaae1)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0xdfaacc)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xdf9c06)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0xdf9be9)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xdf8caa)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xdf8931)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xdf845c)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0xb90715)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0xb8bc31)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0x8f7d40)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-19 19:19:21.775","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-19 19:19:21.776","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-19 19:19:25.731","msg":"http server started"}
+
+
+[31m2023/09/19 19:19:32 [Recovery] 2023/09/19 - 19:19:32 panic recovered:
+POST /user/register HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 86
+Content-Type: application/json
+Postman-Token: a473ce4e-a9ad-43e2-b9f3-d52251c9d114
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0xf9b9c6)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0xf9b996)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/user_service.go:45 (0x19ddf9f)
+	(*UserService).Register: println(err.Error())
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/handler/user_handler.go:39 (0x19de252)
+	(*UserHandler).Register: user, err := u.userService.Register(c, &form)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x14baae1)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0x14baacc)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x14b9c06)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0x14b9be9)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x14b8caa)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0x14b8931)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0x14b845c)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0x1250715)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0x124bc31)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0xfb7d40)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-19 19:19:56.726","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-19 19:19:56.726","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-19 19:20:00.512","msg":"http server started"}
+
+
+[31m2023/09/19 19:20:07 [Recovery] 2023/09/19 - 19:20:07 panic recovered:
+POST /user/register HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 86
+Content-Type: application/json
+Postman-Token: 85d7d7e2-9f6c-4336-8703-de3107986744
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0x48b9c6)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0x48b996)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/user_service.go:45 (0xecdf9f)
+	(*UserService).Register: println(err.Error())
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/handler/user_handler.go:39 (0xece232)
+	(*UserHandler).Register: user, err := u.userService.Register(c, &form)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x9aaae1)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0x9aaacc)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x9a9c06)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0x9a9be9)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x9a8caa)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0x9a8931)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0x9a845c)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0x740715)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0x73bc31)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0x4a7d40)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-19 19:22:08.927","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-19 19:22:08.927","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-19 19:22:12.581","msg":"http server started"}
+
+
+[31m2023/09/19 19:22:18 [Recovery] 2023/09/19 - 19:22:18 panic recovered:
+POST /user/register HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 86
+Content-Type: application/json
+Postman-Token: c2960417-9adf-4961-b745-e559c37b6b52
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0x2bb9c6)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0x2bb996)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/user_service.go:45 (0xcfe0df)
+	(*UserService).Register: println(err.Error())
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/handler/user_handler.go:38 (0xcfe372)
+	(*UserHandler).Register: user, err := u.userService.Register(c, &form)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x7daae1)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0x7daacc)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x7d9c06)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0x7d9be9)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x7d8caa)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0x7d8931)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0x7d845c)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0x570715)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0x56bc31)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0x2d7d40)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-19 19:23:34.480","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-19 19:23:34.480","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-19 19:23:37.977","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-19 19:24:09.974","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-19 19:24:09.974","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-19 19:24:14.000","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-19 19:27:09.878","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-19 19:27:09.878","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-19 19:27:12.167","msg":"http server started"}
+
+
+[31m2023/09/19 19:30:27 [Recovery] 2023/09/19 - 19:30:27 panic recovered:
+GET /user/auto/info HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: 6b7e2f08-fa3d-430f-857f-74c4cc58cfd9
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0x5eb9c6)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0x5eb996)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/jwt_dao.go:32 (0x10bd32a)
+	(*JwtDao).GetBlackJoinUnix: joinUnixStr, err := r.rdb.Get(ctx, r.getBlackListKey(tokenStr)).Result()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/jwt_service.go:79 (0x10bf2bd)
+	(*JwtService).IsInBlacklist: joinUnix, err := s.jwtDao.GetBlackJoinUnix(ctx, tokenStr)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/mildware/jwt.go:42 (0x10c3064)
+	(*JWTAuth).LoginAutoHandler.func1: if err != nil || m.jwtS.IsInBlacklist(c, tokenStr) {
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xb0aae1)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0xb0aacc)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xb09c06)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0xb09be9)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xb08caa)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xb08931)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xb0845c)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0x8a0715)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0x89bc31)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0x607d40)
+	goexit: BYTE	$0x90	// NOP
+[0m
+
+
+[31m2023/09/19 19:30:35 [Recovery] 2023/09/19 - 19:30:35 panic recovered:
+GET /user/auto/info HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: f6fa8732-8b90-4464-bbb0-a01b52b25cdc
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0x5eb9c6)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0x5eb996)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/jwt_dao.go:32 (0x10bd32a)
+	(*JwtDao).GetBlackJoinUnix: joinUnixStr, err := r.rdb.Get(ctx, r.getBlackListKey(tokenStr)).Result()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/jwt_service.go:79 (0x10bf2bd)
+	(*JwtService).IsInBlacklist: joinUnix, err := s.jwtDao.GetBlackJoinUnix(ctx, tokenStr)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/mildware/jwt.go:42 (0x10c3064)
+	(*JWTAuth).LoginAutoHandler.func1: if err != nil || m.jwtS.IsInBlacklist(c, tokenStr) {
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xb0aae1)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0xb0aacc)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xb09c06)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0xb09be9)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xb08caa)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xb08931)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xb0845c)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0x8a0715)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0x89bc31)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0x607d40)
+	goexit: BYTE	$0x90	// NOP
+[0m
+
+
+[31m2023/09/19 19:31:02 [Recovery] 2023/09/19 - 19:31:02 panic recovered:
+GET /user/auto/info HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: b1ee99f2-39f6-438b-a7f1-0f82a142ef82
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0x5eb9c6)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0x5eb996)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/jwt_dao.go:32 (0x10bd32a)
+	(*JwtDao).GetBlackJoinUnix: joinUnixStr, err := r.rdb.Get(ctx, r.getBlackListKey(tokenStr)).Result()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/jwt_service.go:79 (0x10bf2bd)
+	(*JwtService).IsInBlacklist: joinUnix, err := s.jwtDao.GetBlackJoinUnix(ctx, tokenStr)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/mildware/jwt.go:42 (0x10c3064)
+	(*JWTAuth).LoginAutoHandler.func1: if err != nil || m.jwtS.IsInBlacklist(c, tokenStr) {
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xb0aae1)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0xb0aacc)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xb09c06)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0xb09be9)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xb08caa)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xb08931)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xb0845c)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0x8a0715)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0x89bc31)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0x607d40)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-19 19:31:20.493","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-19 19:31:20.493","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-19 19:31:22.957","msg":"http server started"}
+
+
+[31m2023/09/19 19:31:24 [Recovery] 2023/09/19 - 19:31:24 panic recovered:
+GET /user/auto/info HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: b7ddfd0f-c87b-4a38-9440-646c8cd0c43e
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0x6eb9c6)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0x6eb996)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/jwt_dao.go:32 (0x11bd32a)
+	(*JwtDao).GetBlackJoinUnix: joinUnixStr, err := r.rdb.Get(ctx, r.getBlackListKey(tokenStr)).Result()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/jwt_service.go:79 (0x11bf2bd)
+	(*JwtService).IsInBlacklist: joinUnix, err := s.jwtDao.GetBlackJoinUnix(ctx, tokenStr)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/mildware/jwt.go:47 (0x11c310b)
+	(*JWTAuth).LoginAutoHandler.func1: if err != nil || m.jwtS.IsInBlacklist(c, tokenStr) {
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xc0aae1)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0xc0aacc)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xc09c06)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0xc09be9)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xc08caa)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xc08931)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xc0845c)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0x9a0715)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0x99bc31)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0x707d40)
+	goexit: BYTE	$0x90	// NOP
+[0m
+
+
+[31m2023/09/19 19:32:20 [Recovery] 2023/09/19 - 19:32:20 panic recovered:
+GET /user/auto/info HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: 48a5c063-b807-46d4-85f2-94deb25ef1f6
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0x6eb9c6)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0x6eb996)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/jwt_dao.go:32 (0x11bd32a)
+	(*JwtDao).GetBlackJoinUnix: joinUnixStr, err := r.rdb.Get(ctx, r.getBlackListKey(tokenStr)).Result()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/jwt_service.go:79 (0x11bf2bd)
+	(*JwtService).IsInBlacklist: joinUnix, err := s.jwtDao.GetBlackJoinUnix(ctx, tokenStr)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/mildware/jwt.go:47 (0x11c310b)
+	(*JWTAuth).LoginAutoHandler.func1: if err != nil || m.jwtS.IsInBlacklist(c, tokenStr) {
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xc0aae1)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0xc0aacc)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xc09c06)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0xc09be9)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xc08caa)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xc08931)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xc0845c)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0x9a0715)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0x99bc31)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0x707d40)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-19 19:33:03.894","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-19 19:33:03.895","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-19 19:33:06.196","msg":"http server started"}
+
+
+[31m2023/09/19 19:33:08 [Recovery] 2023/09/19 - 19:33:08 panic recovered:
+GET /user/auto/info HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: c070b732-2b30-4dc6-b0d6-f070bc5e7cb0
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0xbeb9c6)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0xbeb996)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/jwt_dao.go:32 (0x16bd32a)
+	(*JwtDao).GetBlackJoinUnix: joinUnixStr, err := r.rdb.Get(ctx, r.getBlackListKey(tokenStr)).Result()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/jwt_service.go:79 (0x16bf2bd)
+	(*JwtService).IsInBlacklist: joinUnix, err := s.jwtDao.GetBlackJoinUnix(ctx, tokenStr)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/mildware/jwt.go:44 (0x16c309e)
+	(*JWTAuth).LoginAutoHandler.func1: if err != nil || m.jwtS.IsInBlacklist(c, tokenStr) {
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x110aae1)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0x110aacc)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x1109c06)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0x1109be9)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x1108caa)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0x1108931)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0x110845c)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0xea0715)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0xe9bc31)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0xc07d40)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-19 19:33:49.767","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-19 19:33:49.767","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-19 19:33:52.051","msg":"http server started"}
+
+
+[31m2023/09/19 19:33:57 [Recovery] 2023/09/19 - 19:33:57 panic recovered:
+GET /user/auto/info HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: aef9c685-54cb-41c9-bc87-fc17abeb9198
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0x52b9c6)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0x52b996)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/jwt_dao.go:32 (0xffd32a)
+	(*JwtDao).GetBlackJoinUnix: joinUnixStr, err := r.rdb.Get(ctx, r.getBlackListKey(tokenStr)).Result()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/jwt_service.go:79 (0xfff2bd)
+	(*JwtService).IsInBlacklist: joinUnix, err := s.jwtDao.GetBlackJoinUnix(ctx, tokenStr)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/mildware/jwt.go:45 (0x10030c4)
+	(*JWTAuth).LoginAutoHandler.func1: if err != nil || m.jwtS.IsInBlacklist(c, tokenStr) {
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xa4aae1)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0xa4aacc)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xa49c06)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0xa49be9)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xa48caa)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xa48931)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xa4845c)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0x7e0715)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0x7dbc31)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0x547d40)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-19 19:34:27.943","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-19 19:34:27.943","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-20 09:56:53.207","msg":"http server started"}
+
+
+[31m2023/09/20 09:57:17 [Recovery] 2023/09/20 - 09:57:17 panic recovered:
+GET /user/auto/info HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: 78b5a5a4-2468-4d9d-9cc9-8516767bb350
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0x78b9c6)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0x78b996)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/jwt_dao.go:32 (0x125d32a)
+	(*JwtDao).GetBlackJoinUnix: joinUnixStr, err := r.rdb.Get(ctx, r.getBlackListKey(tokenStr)).Result()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/jwt_service.go:79 (0x125f2bd)
+	(*JwtService).IsInBlacklist: joinUnix, err := s.jwtDao.GetBlackJoinUnix(ctx, tokenStr)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/mildware/jwt.go:45 (0x12630c4)
+	(*JWTAuth).LoginAutoHandler.func1: if err != nil || m.jwtS.IsInBlacklist(c, tokenStr) {
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xcaaae1)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0xcaaacc)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xca9c06)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0xca9be9)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xca8caa)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xca8931)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xca845c)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0xa40715)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0xa3bc31)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0x7a7d40)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-20 09:58:13.832","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-20 09:58:13.833","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-20 09:58:17.261","msg":"http server started"}
+
+
+[31m2023/09/20 09:58:19 [Recovery] 2023/09/20 - 09:58:19 panic recovered:
+GET /user/auto/info HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: 3a1b0b0b-9c1e-42ea-99a3-627cd1c09cb4
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0x76b9c6)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0x76b996)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/jwt_dao.go:32 (0x123d32a)
+	(*JwtDao).GetBlackJoinUnix: joinUnixStr, err := r.rdb.Get(ctx, r.getBlackListKey(tokenStr)).Result()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/jwt_service.go:79 (0x123f2bd)
+	(*JwtService).IsInBlacklist: joinUnix, err := s.jwtDao.GetBlackJoinUnix(ctx, tokenStr)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/mildware/jwt.go:50 (0x124310b)
+	(*JWTAuth).LoginAutoHandler.func1: if err != nil || m.jwtS.IsInBlacklist(c, tokenStr) {
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xc8aae1)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0xc8aacc)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xc89c06)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0xc89be9)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xc88caa)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xc88931)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xc8845c)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0xa20715)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0xa1bc31)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0x787d40)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-20 09:58:38.868","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-20 09:58:38.868","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-20 09:58:42.145","msg":"http server started"}
+
+
+[31m2023/09/20 09:58:45 [Recovery] 2023/09/20 - 09:58:45 panic recovered:
+GET /user/auto/info HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: ae9358e8-8dec-4478-85a6-b6f92fef47f7
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0x9db9c6)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0x9db996)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/jwt_dao.go:32 (0x14ad32a)
+	(*JwtDao).GetBlackJoinUnix: joinUnixStr, err := r.rdb.Get(ctx, r.getBlackListKey(tokenStr)).Result()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/jwt_service.go:79 (0x14af2bd)
+	(*JwtService).IsInBlacklist: joinUnix, err := s.jwtDao.GetBlackJoinUnix(ctx, tokenStr)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/mildware/jwt.go:45 (0x14b30c4)
+	(*JWTAuth).LoginAutoHandler.func1: if err != nil || m.jwtS.IsInBlacklist(c, tokenStr) {
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xefaae1)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0xefaacc)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xef9c06)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0xef9be9)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xef8caa)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xef8931)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xef845c)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0xc90715)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0xc8bc31)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0x9f7d40)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-20 09:59:04.810","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-20 09:59:04.811","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-20 09:59:37.309","msg":"http server started"}
+
+
+[31m2023/09/20 10:00:11 [Recovery] 2023/09/20 - 10:00:11 panic recovered:
+GET /user/auto/info HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: 04e8af57-4f86-47c9-a468-c955407ae46b
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0x55d1c4)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0x5728ad)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/jwt_dao.go:32 (0x17df3d2)
+	(*JwtDao).GetBlackJoinUnix: joinUnixStr, err := r.rdb.Get(ctx, r.getBlackListKey(tokenStr)).Result()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/jwt_service.go:79 (0x17e26a7)
+	(*JwtService).IsInBlacklist: joinUnix, err := s.jwtDao.GetBlackJoinUnix(ctx, tokenStr)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/mildware/jwt.go:45 (0x17e8128)
+	(*JWTAuth).LoginAutoHandler.func1: if err != nil || m.jwtS.IsInBlacklist(c, tokenStr) {
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xd7e2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0xd91d57)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xd7e2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0xd907b1)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xd7e2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xd8e393)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xd8de64)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0xa07833)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0xa011f4)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0x58faa0)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-20 10:00:15.333","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-20 10:00:15.334","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-20 10:00:17.569","msg":"http server started"}
+
+
+[31m2023/09/20 10:02:16 [Recovery] 2023/09/20 - 10:02:15 panic recovered:
+GET /user/auto/info HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: e96767c7-2e33-4860-b649-d34edaf3d00b
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0x55d1c4)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0x5728ad)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/jwt_dao.go:32 (0x17df3d2)
+	(*JwtDao).GetBlackJoinUnix: joinUnixStr, err := r.rdb.Get(ctx, r.getBlackListKey(tokenStr)).Result()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/jwt_service.go:79 (0x17e26a7)
+	(*JwtService).IsInBlacklist: joinUnix, err := s.jwtDao.GetBlackJoinUnix(ctx, tokenStr)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/mildware/jwt.go:45 (0x17e8128)
+	(*JWTAuth).LoginAutoHandler.func1: if err != nil || m.jwtS.IsInBlacklist(c, tokenStr) {
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xd7e2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0xd91d57)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xd7e2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0xd907b1)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xd7e2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xd8e393)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xd8de64)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0xa07833)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0xa011f4)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0x58faa0)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-20 10:02:22.420","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-20 10:02:22.420","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-20 10:02:24.718","msg":"http server started"}
+
+
+[31m2023/09/20 10:02:52 [Recovery] 2023/09/20 - 10:02:52 panic recovered:
+GET /user/auto/info HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: 45578414-f4c8-4d99-b063-7b599a86d664
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0x55d1c4)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0x5728ad)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/jwt_dao.go:32 (0x17df3d2)
+	(*JwtDao).GetBlackJoinUnix: joinUnixStr, err := r.rdb.Get(ctx, r.getBlackListKey(tokenStr)).Result()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/jwt_service.go:79 (0x17e26a7)
+	(*JwtService).IsInBlacklist: joinUnix, err := s.jwtDao.GetBlackJoinUnix(ctx, tokenStr)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/mildware/jwt.go:45 (0x17e8128)
+	(*JWTAuth).LoginAutoHandler.func1: if err != nil || m.jwtS.IsInBlacklist(c, tokenStr) {
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xd7e2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0xd91d57)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xd7e2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0xd907b1)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xd7e2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xd8e393)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xd8de64)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0xa07833)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0xa011f4)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0x58faa0)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-20 10:02:52.491","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-20 10:02:52.491","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-20 10:02:54.698","msg":"http server started"}
+
+
+[31m2023/09/20 10:03:22 [Recovery] 2023/09/20 - 10:03:22 panic recovered:
+GET /user/auto/info HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: 87376296-02c6-4189-bc9e-c392eef578de
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0x55d1c4)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0x5728ad)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/jwt_dao.go:32 (0x17df3d2)
+	(*JwtDao).GetBlackJoinUnix: joinUnixStr, err := r.rdb.Get(ctx, r.getBlackListKey(tokenStr)).Result()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/jwt_service.go:79 (0x17e26a7)
+	(*JwtService).IsInBlacklist: joinUnix, err := s.jwtDao.GetBlackJoinUnix(ctx, tokenStr)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/mildware/jwt.go:45 (0x17e8128)
+	(*JWTAuth).LoginAutoHandler.func1: if err != nil || m.jwtS.IsInBlacklist(c, tokenStr) {
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xd7e2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0xd91d57)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xd7e2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0xd907b1)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xd7e2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xd8e393)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xd8de64)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0xa07833)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0xa011f4)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0x58faa0)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-20 10:03:22.551","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-20 10:03:22.551","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-20 10:03:24.730","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-20 10:03:38.428","msg":"http server has been stop"}
+
+
+[31m2023/09/20 10:03:38 [Recovery] 2023/09/20 - 10:03:38 panic recovered:
+GET /user/auto/info HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: bf1d1793-e9de-4ce3-b33a-6690d1e493d9
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0x55d1c4)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0x5728ad)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/jwt_dao.go:32 (0x17df3d2)
+	(*JwtDao).GetBlackJoinUnix: joinUnixStr, err := r.rdb.Get(ctx, r.getBlackListKey(tokenStr)).Result()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/jwt_service.go:79 (0x17e26a7)
+	(*JwtService).IsInBlacklist: joinUnix, err := s.jwtDao.GetBlackJoinUnix(ctx, tokenStr)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/mildware/jwt.go:45 (0x17e8128)
+	(*JWTAuth).LoginAutoHandler.func1: if err != nil || m.jwtS.IsInBlacklist(c, tokenStr) {
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xd7e2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0xd91d57)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xd7e2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0xd907b1)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xd7e2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xd8e393)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xd8de64)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0xa07833)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0xa011f4)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0x58faa0)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-20 10:03:38.639","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-20 10:05:02.240","msg":"http server started"}
+
+
+[31m2023/09/20 10:05:27 [Recovery] 2023/09/20 - 10:05:27 panic recovered:
+GET /user/auto/info HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: 69bb8916-05b8-48e5-99e3-5acf4bd8ce6b
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0x55d1c4)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0x5728ad)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/jwt_dao.go:32 (0x17df3d2)
+	(*JwtDao).GetBlackJoinUnix: joinUnixStr, err := r.rdb.Get(ctx, r.getBlackListKey(tokenStr)).Result()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/jwt_service.go:79 (0x17e26a7)
+	(*JwtService).IsInBlacklist: joinUnix, err := s.jwtDao.GetBlackJoinUnix(ctx, tokenStr)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/mildware/jwt.go:45 (0x17e8128)
+	(*JWTAuth).LoginAutoHandler.func1: if err != nil || m.jwtS.IsInBlacklist(c, tokenStr) {
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xd7e2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0xd91d57)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xd7e2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0xd907b1)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xd7e2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xd8e393)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xd8de64)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0xa07833)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0xa011f4)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0x58faa0)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-20 10:05:27.327","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-20 10:05:27.328","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-20 10:05:29.765","msg":"http server started"}
+
+
+[31m2023/09/20 10:05:34 [Recovery] 2023/09/20 - 10:05:34 panic recovered:
+GET /user/auto/info HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: 6c366d44-7e65-47c4-ada1-45a978a5fdca
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0x55d1c4)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0x5728ad)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/jwt_dao.go:32 (0x17df3d2)
+	(*JwtDao).GetBlackJoinUnix: joinUnixStr, err := r.rdb.Get(ctx, r.getBlackListKey(tokenStr)).Result()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/jwt_service.go:79 (0x17e26a7)
+	(*JwtService).IsInBlacklist: joinUnix, err := s.jwtDao.GetBlackJoinUnix(ctx, tokenStr)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/mildware/jwt.go:45 (0x17e8128)
+	(*JWTAuth).LoginAutoHandler.func1: if err != nil || m.jwtS.IsInBlacklist(c, tokenStr) {
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xd7e2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0xd91d57)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xd7e2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0xd907b1)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xd7e2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xd8e393)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xd8de64)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0xa07833)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0xa011f4)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0x58faa0)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-20 10:05:34.679","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-20 10:05:34.679","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-20 10:05:37.245","msg":"http server started"}
+
+
+[31m2023/09/20 10:05:56 [Recovery] 2023/09/20 - 10:05:56 panic recovered:
+GET /user/auto/info HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: 4be54cf1-969a-4fdb-a451-4fa4946e62ca
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0x55d1c4)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0x5728ad)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/jwt_dao.go:32 (0x17df3d2)
+	(*JwtDao).GetBlackJoinUnix: joinUnixStr, err := r.rdb.Get(ctx, r.getBlackListKey(tokenStr)).Result()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/jwt_service.go:79 (0x17e26a7)
+	(*JwtService).IsInBlacklist: joinUnix, err := s.jwtDao.GetBlackJoinUnix(ctx, tokenStr)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/mildware/jwt.go:45 (0x17e8128)
+	(*JWTAuth).LoginAutoHandler.func1: if err != nil || m.jwtS.IsInBlacklist(c, tokenStr) {
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xd7e2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0xd91d57)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xd7e2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0xd907b1)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xd7e2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xd8e393)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xd8de64)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0xa07833)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0xa011f4)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0x58faa0)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-20 10:05:56.892","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-20 10:05:56.892","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-20 10:06:32.518","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-20 10:07:15.886","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-20 10:07:15.887","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-20 10:07:19.551","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-20 10:07:26.926","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-20 10:07:26.927","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-20 10:07:28.225","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-20 10:07:59.797","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-20 10:07:59.797","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-20 10:08:03.326","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-20 10:08:25.143","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-20 10:08:25.143","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-20 10:08:28.663","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-20 10:09:38.203","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-20 10:09:38.204","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-20 10:09:41.642","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-20 10:10:39.258","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-20 10:10:39.258","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-20 10:10:42.530","msg":"http server started"}
+
+
+[31m2023/09/20 10:10:48 [Recovery] 2023/09/20 - 10:10:48 panic recovered:
+GET /user/auto/info HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: 1138ba03-5ccd-4b0d-8191-0bbfa741e8ca
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0x4bb9c6)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0x4bb996)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/jwt_dao.go:32 (0xf8d32a)
+	(*JwtDao).GetBlackJoinUnix: joinUnixStr, err := r.rdb.Get(ctx, r.getBlackListKey(tokenStr)).Result()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/jwt_service.go:80 (0xf8f2bd)
+	(*JwtService).IsInBlacklist: joinUnix, err := s.jwtDao.GetBlackJoinUnix(ctx, tokenStr)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/mildware/jwt.go:45 (0xf930c4)
+	(*JWTAuth).LoginAutoHandler.func1: if err != nil || m.jwtS.IsInBlacklist(c, tokenStr) {
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x9daae1)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0x9daacc)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x9d9c06)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0x9d9be9)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x9d8caa)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0x9d8931)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0x9d845c)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0x770715)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0x76bc31)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0x4d7d40)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-20 10:11:22.460","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-20 10:11:22.461","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-20 10:11:27.232","msg":"http server started"}
+
+
+[31m2023/09/20 10:11:49 [Recovery] 2023/09/20 - 10:11:49 panic recovered:
+GET /user/auto/info HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: 7bfd00a2-c90d-4b88-9249-6680648e74e7
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0xad1c4)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0xc28ad)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/jwt_dao.go:32 (0x132f3d2)
+	(*JwtDao).GetBlackJoinUnix: joinUnixStr, err := r.rdb.Get(ctx, r.getBlackListKey(tokenStr)).Result()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/jwt_service.go:80 (0x13326c7)
+	(*JwtService).IsInBlacklist: joinUnix, err := s.jwtDao.GetBlackJoinUnix(ctx, tokenStr)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/mildware/jwt.go:45 (0x1338148)
+	(*JWTAuth).LoginAutoHandler.func1: if err != nil || m.jwtS.IsInBlacklist(c, tokenStr) {
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x8ce2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0x8e1d57)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x8ce2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0x8e07b1)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x8ce2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0x8de393)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0x8dde64)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0x557833)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0x5511f4)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0xdfaa0)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-20 10:11:52.507","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-20 10:11:52.508","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-20 10:11:54.969","msg":"http server started"}
+
+
+[31m2023/09/20 10:12:21 [Recovery] 2023/09/20 - 10:12:21 panic recovered:
+GET /user/auto/info HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: b1e88246-c6e2-43c0-8276-69d1a20e86fd
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0xad1c4)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0xc28ad)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/jwt_dao.go:32 (0x132f3d2)
+	(*JwtDao).GetBlackJoinUnix: joinUnixStr, err := r.rdb.Get(ctx, r.getBlackListKey(tokenStr)).Result()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/jwt_service.go:80 (0x13326c7)
+	(*JwtService).IsInBlacklist: joinUnix, err := s.jwtDao.GetBlackJoinUnix(ctx, tokenStr)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/mildware/jwt.go:45 (0x1338148)
+	(*JWTAuth).LoginAutoHandler.func1: if err != nil || m.jwtS.IsInBlacklist(c, tokenStr) {
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x8ce2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0x8e1d57)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x8ce2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0x8e07b1)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x8ce2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0x8de393)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0x8dde64)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0x557833)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0x5511f4)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0xdfaa0)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-20 10:12:23.305","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-20 10:12:23.306","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-20 10:12:25.672","msg":"http server started"}
+
+
+[31m2023/09/20 10:13:50 [Recovery] 2023/09/20 - 10:13:50 panic recovered:
+GET /user/auto/info HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: 04f034a5-a98a-4e23-875e-6a6afeff0f29
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0xad1c4)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0xc28ad)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/jwt_dao.go:32 (0x132f3d2)
+	(*JwtDao).GetBlackJoinUnix: joinUnixStr, err := r.rdb.Get(ctx, r.getBlackListKey(tokenStr)).Result()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/jwt_service.go:80 (0x13326c7)
+	(*JwtService).IsInBlacklist: joinUnix, err := s.jwtDao.GetBlackJoinUnix(ctx, tokenStr)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/mildware/jwt.go:45 (0x1338148)
+	(*JWTAuth).LoginAutoHandler.func1: if err != nil || m.jwtS.IsInBlacklist(c, tokenStr) {
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x8ce2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0x8e1d57)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x8ce2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0x8e07b1)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x8ce2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0x8de393)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0x8dde64)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0x557833)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0x5511f4)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0xdfaa0)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-20 10:13:50.563","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-20 10:13:50.563","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-20 10:13:53.027","msg":"http server started"}
+
+
+[31m2023/09/20 10:14:34 [Recovery] 2023/09/20 - 10:14:34 panic recovered:
+GET /user/auto/info HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: 9d2ce5ae-8156-49a0-91d4-b911b16762bb
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0xad1c4)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0xc28ad)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/jwt_dao.go:32 (0x132f3d2)
+	(*JwtDao).GetBlackJoinUnix: joinUnixStr, err := r.rdb.Get(ctx, r.getBlackListKey(tokenStr)).Result()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/jwt_service.go:80 (0x13326c7)
+	(*JwtService).IsInBlacklist: joinUnix, err := s.jwtDao.GetBlackJoinUnix(ctx, tokenStr)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/mildware/jwt.go:45 (0x1338148)
+	(*JWTAuth).LoginAutoHandler.func1: if err != nil || m.jwtS.IsInBlacklist(c, tokenStr) {
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x8ce2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0x8e1d57)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x8ce2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0x8e07b1)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x8ce2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0x8de393)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0x8dde64)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0x557833)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0x5511f4)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0xdfaa0)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-20 10:14:34.904","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-20 10:14:34.905","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-20 10:14:37.520","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-20 10:17:14.662","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-20 10:17:14.662","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-20 10:17:19.632","msg":"http server started"}
+
+
+[31m2023/09/20 10:18:14 [Recovery] 2023/09/20 - 10:18:14 panic recovered:
+GET /user/auto/info HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: dfaf7bf7-be46-4b4b-b04a-353a0a5f8e86
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0x5ad1c4)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0x5c28ad)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/jwt_dao.go:35 (0x182f4bd)
+	(*JwtDao).GetBlackJoinUnix: joinUnixStr, err := r.rdb.Get(ctx, r.getBlackListKey(tokenStr)).Result()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/jwt_service.go:80 (0x18327c7)
+	(*JwtService).IsInBlacklist: joinUnix, err := s.jwtDao.GetBlackJoinUnix(ctx, tokenStr)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/mildware/jwt.go:45 (0x1838248)
+	(*JWTAuth).LoginAutoHandler.func1: if err != nil || m.jwtS.IsInBlacklist(c, tokenStr) {
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xdce2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0xde1d57)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xdce2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0xde07b1)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xdce2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xdde393)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xddde64)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0xa57833)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0xa511f4)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0x5dfaa0)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-20 10:18:14.767","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-20 10:18:14.767","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-20 10:18:19.169","msg":"http server started"}
+
+
+[31m2023/09/20 10:18:19 [Recovery] 2023/09/20 - 10:18:19 panic recovered:
+GET /user/auto/info HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: 232e1107-ba84-44bd-84b5-1d018c2cd354
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0x68d1c4)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0x6a28ad)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/jwt_dao.go:35 (0x190f48d)
+	(*JwtDao).GetBlackJoinUnix: if r.rdb == nil {
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/jwt_service.go:80 (0x1912887)
+	(*JwtService).IsInBlacklist: joinUnix, err := s.jwtDao.GetBlackJoinUnix(ctx, tokenStr)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/mildware/jwt.go:45 (0x1918308)
+	(*JWTAuth).LoginAutoHandler.func1: if err != nil || m.jwtS.IsInBlacklist(c, tokenStr) {
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xeae2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0xec1d57)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xeae2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0xec07b1)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xeae2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xebe393)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xebde64)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0xb37833)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0xb311f4)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0x6bfaa0)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-20 10:18:29.124","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-20 10:18:29.125","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-20 10:18:31.542","msg":"http server started"}
+
+
+[31m2023/09/20 10:18:32 [Recovery] 2023/09/20 - 10:18:32 panic recovered:
+GET /user/auto/info HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: 629c7889-a203-4a15-b8f8-cb9e04021146
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0x68d1c4)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0x6a28ad)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/jwt_dao.go:35 (0x190f48d)
+	(*JwtDao).GetBlackJoinUnix: if r.rdb == nil {
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/jwt_service.go:80 (0x1912887)
+	(*JwtService).IsInBlacklist: joinUnix, err := s.jwtDao.GetBlackJoinUnix(ctx, tokenStr)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/mildware/jwt.go:45 (0x1918308)
+	(*JWTAuth).LoginAutoHandler.func1: if err != nil || m.jwtS.IsInBlacklist(c, tokenStr) {
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xeae2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0xec1d57)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xeae2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0xec07b1)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xeae2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xebe393)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xebde64)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0xb37833)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0xb311f4)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0x6bfaa0)
+	goexit: BYTE	$0x90	// NOP
+[0m
+
+
+[31m2023/09/20 10:18:45 [Recovery] 2023/09/20 - 10:18:45 panic recovered:
+GET /user/auto/info HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: 0916dcee-739c-4eb1-80c5-35cc717cb993
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0x68d1c4)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0x6a28ad)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/jwt_dao.go:35 (0x190f48d)
+	(*JwtDao).GetBlackJoinUnix: if r.rdb == nil {
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/jwt_service.go:80 (0x1912887)
+	(*JwtService).IsInBlacklist: joinUnix, err := s.jwtDao.GetBlackJoinUnix(ctx, tokenStr)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/mildware/jwt.go:45 (0x1918308)
+	(*JWTAuth).LoginAutoHandler.func1: if err != nil || m.jwtS.IsInBlacklist(c, tokenStr) {
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xeae2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0xec1d57)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xeae2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0xec07b1)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xeae2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xebe393)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xebde64)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0xb37833)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0xb311f4)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0x6bfaa0)
+	goexit: BYTE	$0x90	// NOP
+[0m
+
+
+[31m2023/09/20 10:19:03 [Recovery] 2023/09/20 - 10:19:03 panic recovered:
+GET /user/auto/info HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: bb8da9c9-e01a-4d14-a849-ba1c1d117f0f
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0x68d1c4)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0x6a28ad)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/jwt_dao.go:35 (0x190f48d)
+	(*JwtDao).GetBlackJoinUnix: if r.rdb == nil {
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/jwt_service.go:80 (0x1912887)
+	(*JwtService).IsInBlacklist: joinUnix, err := s.jwtDao.GetBlackJoinUnix(ctx, tokenStr)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/mildware/jwt.go:45 (0x1918308)
+	(*JWTAuth).LoginAutoHandler.func1: if err != nil || m.jwtS.IsInBlacklist(c, tokenStr) {
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xeae2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0xec1d57)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xeae2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0xec07b1)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xeae2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xebe393)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xebde64)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0xb37833)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0xb311f4)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0x6bfaa0)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-20 10:19:36.011","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-20 10:19:36.011","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-20 10:19:38.538","msg":"http server started"}
+
+
+[31m2023/09/20 10:21:48 [Recovery] 2023/09/20 - 10:21:48 panic recovered:
+GET /user/auto/info HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: 0ae75a3c-1ed5-47b1-af2d-ff882d80ad1a
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0x68d1c4)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0x6a28ad)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/jwt_dao.go:35 (0x190f48d)
+	(*JwtDao).GetBlackJoinUnix: if r.rdb == nil {
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/jwt_service.go:80 (0x1912887)
+	(*JwtService).IsInBlacklist: joinUnix, err := s.jwtDao.GetBlackJoinUnix(ctx, tokenStr)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/mildware/jwt.go:45 (0x1918308)
+	(*JWTAuth).LoginAutoHandler.func1: if err != nil || m.jwtS.IsInBlacklist(c, tokenStr) {
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xeae2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0xec1d57)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xeae2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0xec07b1)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xeae2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xebe393)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xebde64)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0xb37833)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0xb311f4)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0x6bfaa0)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-20 10:21:48.112","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-20 10:21:48.113","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-20 10:21:51.529","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:21:51.535","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:21:51.535","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:21:51.554","msg":"http server started"}
+
+
+[31m2023/09/20 10:21:57 [Recovery] 2023/09/20 - 10:21:57 panic recovered:
+GET /user/auto/info HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: f0d96948-e666-46d9-bff4-852582ab00c5
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0xe5b9c6)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0xe5b996)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/jwt_dao.go:32 (0x192d42a)
+	(*JwtDao).GetBlackJoinUnix: joinUnixStr, err := r.rdb.Get(ctx, r.getBlackListKey(tokenStr)).Result()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/jwt_service.go:80 (0x192f3bd)
+	(*JwtService).IsInBlacklist: joinUnix, err := s.jwtDao.GetBlackJoinUnix(ctx, tokenStr)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/mildware/jwt.go:45 (0x19331c4)
+	(*JWTAuth).LoginAutoHandler.func1: if err != nil || m.jwtS.IsInBlacklist(c, tokenStr) {
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x137aae1)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0x137aacc)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x1379c06)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0x1379be9)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x1378caa)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0x1378931)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0x137845c)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0x1110715)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0x110bc31)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0xe77d40)
+	goexit: BYTE	$0x90	// NOP
+[0m
+
+
+[31m2023/09/20 10:22:07 [Recovery] 2023/09/20 - 10:22:07 panic recovered:
+GET /user/auto/info HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: 1edec397-1ef0-4bb7-ad9b-40a87e7c3a5e
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0xe5b9c6)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0xe5b996)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/jwt_dao.go:32 (0x192d42a)
+	(*JwtDao).GetBlackJoinUnix: joinUnixStr, err := r.rdb.Get(ctx, r.getBlackListKey(tokenStr)).Result()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/jwt_service.go:80 (0x192f3bd)
+	(*JwtService).IsInBlacklist: joinUnix, err := s.jwtDao.GetBlackJoinUnix(ctx, tokenStr)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/mildware/jwt.go:45 (0x19331c4)
+	(*JWTAuth).LoginAutoHandler.func1: if err != nil || m.jwtS.IsInBlacklist(c, tokenStr) {
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x137aae1)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0x137aacc)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x1379c06)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0x1379be9)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x1378caa)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0x1378931)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0x137845c)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0x1110715)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0x110bc31)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0xe77d40)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-20 10:22:12.674","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-20 10:22:12.674","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-20 10:22:13.948","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:22:13.957","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:22:13.957","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:22:13.971","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-20 10:23:56.726","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-20 10:23:56.727","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-20 10:24:00.939","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:24:00.951","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:24:00.951","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:24:00.968","msg":"http server started"}
+
+
+[31m2023/09/20 10:25:41 [Recovery] 2023/09/20 - 10:25:41 panic recovered:
+GET /user/auto/info HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: 9e78a1a7-4a7d-41a5-83d0-4a8704f5dc34
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0xabd1c4)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0xad28ad)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/jwt_dao.go:32 (0x1d3f405)
+	(*JwtDao).GetBlackJoinUnix: if r.rdb == nil {
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/jwt_service.go:80 (0x1d42847)
+	(*JwtService).IsInBlacklist: joinUnix, err := s.jwtDao.GetBlackJoinUnix(ctx, tokenStr)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/mildware/jwt.go:45 (0x1d482c8)
+	(*JWTAuth).LoginAutoHandler.func1: if err != nil || m.jwtS.IsInBlacklist(c, tokenStr) {
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x12de2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0x12f1d57)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x12de2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0x12f07b1)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x12de2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0x12ee393)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0x12ede64)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0xf67833)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0xf611f4)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0xaefaa0)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-20 10:25:41.980","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-20 10:25:41.981","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-20 10:25:45.412","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:25:45.420","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:25:45.420","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:25:45.435","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-20 10:26:24.727","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-20 10:26:24.727","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-20 10:26:39.128","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:26:39.134","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:26:39.134","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:26:39.152","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-20 10:26:54.913","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-20 10:26:54.913","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-20 10:27:05.540","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:27:05.553","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:27:05.553","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:27:05.567","msg":"http server started"}
+
+
+[31m2023/09/20 10:30:19 [Recovery] 2023/09/20 - 10:30:19 panic recovered:
+GET /user/auto/info HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: dc60d5ba-ebc4-4ea6-a69c-d24c4ea99a7c
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0x37d1c4)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0x3928ad)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/jwt_dao.go:32 (0x15ff432)
+	(*JwtDao).GetBlackJoinUnix: joinUnixStr, err := r.rdb.Get(ctx, r.getBlackListKey(tokenStr)).Result()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/jwt_service.go:80 (0x1602727)
+	(*JwtService).IsInBlacklist: joinUnix, err := s.jwtDao.GetBlackJoinUnix(ctx, tokenStr)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/mildware/jwt.go:45 (0x16081a8)
+	(*JWTAuth).LoginAutoHandler.func1: if err != nil || m.jwtS.IsInBlacklist(c, tokenStr) {
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xb9e2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0xbb1d57)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xb9e2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0xbb07b1)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xb9e2dc)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xbae393)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xbade64)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0x827833)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0x8211f4)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0x3afaa0)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-20 10:30:19.577","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-20 10:30:19.578","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-20 10:32:30.074","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:32:30.081","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:32:30.081","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:32:30.095","msg":"http server started"}
+
+
+[31m2023/09/20 10:32:32 [Recovery] 2023/09/20 - 10:32:32 panic recovered:
+GET /user/auto/info HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: 3a3efa9e-a9e1-4444-932f-a80ad1c903e9
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0xeeb9c6)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0xeeb996)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/jwt_dao.go:35 (0x19bd36a)
+	(*JwtDao).GetBlackJoinUnix: joinUnixStr, err := r.data.rdb.Get(ctx, r.getBlackListKey(tokenStr)).Result()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/jwt_service.go:80 (0x19bf2fd)
+	(*JwtService).IsInBlacklist: joinUnix, err := s.jwtDao.GetBlackJoinUnix(ctx, tokenStr)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/mildware/jwt.go:45 (0x19c3104)
+	(*JWTAuth).LoginAutoHandler.func1: if err != nil || m.jwtS.IsInBlacklist(c, tokenStr) {
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x140aae1)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0x140aacc)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x1409c06)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0x1409be9)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x1408caa)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0x1408931)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0x140845c)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0x11a0715)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0x119bc31)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0xf07d40)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-20 10:33:11.886","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-20 10:33:11.886","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-20 10:33:15.202","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:33:15.209","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:33:15.209","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:33:15.221","msg":"http server started"}
+
+
+[31m2023/09/20 10:33:17 [Recovery] 2023/09/20 - 10:33:17 panic recovered:
+GET /user/auto/info HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: 0a58a7fc-0da9-4fc6-8c7c-eaac89599ed9
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0xd8b9c6)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0xd8b996)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/jwt_dao.go:36 (0x185d357)
+	(*JwtDao).GetBlackJoinUnix: fmt.Printf("data: %v\n", r.data)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/jwt_service.go:80 (0x185f43d)
+	(*JwtService).IsInBlacklist: joinUnix, err := s.jwtDao.GetBlackJoinUnix(ctx, tokenStr)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/mildware/jwt.go:45 (0x1863244)
+	(*JWTAuth).LoginAutoHandler.func1: if err != nil || m.jwtS.IsInBlacklist(c, tokenStr) {
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x12aaae1)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0x12aaacc)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x12a9c06)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0x12a9be9)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x12a8caa)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0x12a8931)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0x12a845c)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0x1040715)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0x103bc31)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0xda7d40)
+	goexit: BYTE	$0x90	// NOP
+[0m
+
+
+[31m2023/09/20 10:33:26 [Recovery] 2023/09/20 - 10:33:26 panic recovered:
+GET /user/auto/info HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: 9285692c-30f3-471d-a6e5-4bc94ef86dc9
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0xd8b9c6)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0xd8b996)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/jwt_dao.go:36 (0x185d357)
+	(*JwtDao).GetBlackJoinUnix: fmt.Printf("data: %v\n", r.data)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/jwt_service.go:80 (0x185f43d)
+	(*JwtService).IsInBlacklist: joinUnix, err := s.jwtDao.GetBlackJoinUnix(ctx, tokenStr)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/mildware/jwt.go:45 (0x1863244)
+	(*JWTAuth).LoginAutoHandler.func1: if err != nil || m.jwtS.IsInBlacklist(c, tokenStr) {
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x12aaae1)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0x12aaacc)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x12a9c06)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0x12a9be9)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x12a8caa)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0x12a8931)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0x12a845c)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0x1040715)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0x103bc31)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0xda7d40)
+	goexit: BYTE	$0x90	// NOP
+[0m
+
+
+[31m2023/09/20 10:33:37 [Recovery] 2023/09/20 - 10:33:37 panic recovered:
+GET /user/auto/info HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: 8a24d5c4-5428-407e-91dc-14c0fd0be763
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0xd8b9c6)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0xd8b996)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/jwt_dao.go:36 (0x185d357)
+	(*JwtDao).GetBlackJoinUnix: fmt.Printf("data: %v\n", r.data)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/jwt_service.go:80 (0x185f43d)
+	(*JwtService).IsInBlacklist: joinUnix, err := s.jwtDao.GetBlackJoinUnix(ctx, tokenStr)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/mildware/jwt.go:45 (0x1863244)
+	(*JWTAuth).LoginAutoHandler.func1: if err != nil || m.jwtS.IsInBlacklist(c, tokenStr) {
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x12aaae1)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0x12aaacc)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x12a9c06)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0x12a9be9)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x12a8caa)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0x12a8931)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0x12a845c)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0x1040715)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0x103bc31)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0xda7d40)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-20 10:35:12.436","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-20 10:35:12.436","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-20 10:35:13.849","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:35:13.855","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:35:13.855","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:35:13.869","msg":"http server started"}
+
+
+[31m2023/09/20 10:35:22 [Recovery] 2023/09/20 - 10:35:22 panic recovered:
+GET /user/auto/info HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: b8a7fd48-a000-4b24-851e-fc901b72600d
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0xd8b9c6)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0xd8b996)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/jwt_dao.go:36 (0x185d357)
+	(*JwtDao).GetBlackJoinUnix: fmt.Printf("data: %v\n", r.data)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/jwt_service.go:80 (0x185f43d)
+	(*JwtService).IsInBlacklist: joinUnix, err := s.jwtDao.GetBlackJoinUnix(ctx, tokenStr)
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/mildware/jwt.go:45 (0x1863244)
+	(*JWTAuth).LoginAutoHandler.func1: if err != nil || m.jwtS.IsInBlacklist(c, tokenStr) {
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x12aaae1)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0x12aaacc)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x12a9c06)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0x12a9be9)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x12a8caa)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0x12a8931)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0x12a845c)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0x1040715)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0x103bc31)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0xda7d40)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-20 10:36:40.864","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-20 10:36:40.864","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-20 10:36:44.255","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:36:44.263","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:36:44.263","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:36:44.276","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-20 10:37:52.884","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-20 10:37:52.885","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-20 10:37:54.160","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:37:54.168","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:37:54.168","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:37:54.180","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-20 10:39:12.560","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-20 10:39:12.561","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-20 10:39:15.968","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:39:15.976","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:39:15.976","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:39:15.991","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-20 10:40:06.656","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-20 10:40:06.657","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-20 10:40:09.964","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:40:09.971","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:40:09.971","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:40:09.985","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-20 10:41:03.992","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-20 10:41:03.992","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-20 10:41:07.307","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:41:07.314","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:41:07.314","msg":"redis connect success"}
+{"level":"local.info","ts":"2023-09-20 10:41:07.328","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-20 10:49:41.080","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-20 10:49:41.080","msg":"closing the data resources"}
