@@ -11,7 +11,6 @@ require (
 	github.com/go-redis/redis/v8 v8.11.5
 	github.com/golang-jwt/jwt/v5 v5.0.0
 	github.com/google/wire v0.5.0
-	github.com/jassue/gin-wire v0.0.0-20221010071222-0025a433e504
 	github.com/sony/sonyflake v1.0.0
 	github.com/spf13/pflag v1.0.5
 	github.com/spf13/viper v1.16.0
