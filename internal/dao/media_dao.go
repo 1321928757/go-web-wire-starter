@@ -20,7 +20,7 @@ var _ MediaDaoInterface = (*MediaDao)(nil)
 
 type MediaDaoInterface interface {
 	Create(ctx context.Context, dm *domain.Media) (*domain.Media, error)
-	FindByID(ctx context.Context, id uint64) (*domain.Media, error)
+	FindByID(id uint64) (*domain.Media, error)
 	FindCacheByID(ctx context.Context, id uint64) (*domain.Media, error)
 }
 
@@ -61,7 +61,7 @@ func (r *MediaDao) Create(ctx context.Context, dm *domain.Media) (*domain.Media,
 }
 
 // 根据ID查找媒体文件记录（不缓存）
-func (r *MediaDao) FindByID(ctx context.Context, id uint64) (*domain.Media, error) {
+func (r *MediaDao) FindByID(id uint64) (*domain.Media, error) {
 	var m model.Media
 	if err := r.data.db.First(&m, id).Error; err != nil {
 		return nil, err

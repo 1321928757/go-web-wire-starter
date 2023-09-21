@@ -43,7 +43,6 @@ func (s *MediaService) SaveImage(ctx *gin.Context, params *request.ImageUpload) 
 	file, err := params.Image.Open()
 	defer file.Close()
 	if err != nil {
-		println(11111111111111)
 		return nil, cErr.BadRequest("上传失败")
 	}
 
@@ -60,7 +59,6 @@ func (s *MediaService) SaveImage(ctx *gin.Context, params *request.ImageUpload) 
 	// 上传文件到本地（服务器）
 	err = disk.Put(localPrefix+key, file, params.Image.Size)
 	if err != nil {
-		println(2222222222222)
 		return nil, cErr.BadRequest("上传失败")
 	}
 
