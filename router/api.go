@@ -7,9 +7,9 @@ import (
 	"go-web-wire-starter/internal/mildware"
 )
 
-// 设置用户api路由
+// 设置用户路由
 func setUserGroupRoutes(
-	router *gin.Engine,
+	router *gin.RouterGroup,
 	userHandler *handler.UserHandler,
 	jwtM *mildware.JWTAuth,
 ) *gin.RouterGroup {
@@ -17,11 +17,26 @@ func setUserGroupRoutes(
 	group.POST("/register", userHandler.Register)
 	group.POST("/login", userHandler.Login)
 
-	authGroup := group.Group("/auto").Use(jwtM.LoginAutoHandler(domain.AppGuardName))
+	authGroup := group.Group("/auth").Use(jwtM.LoginAutoHandler(domain.AppGuardName))
 	{
 		authGroup.GET("/info", userHandler.Info)
 		authGroup.POST("/logout", userHandler.Logout)
 	}
 
+	return group
+}
+
+// 设置媒体路由
+func setMediaGroupRoutes(
+	router *gin.RouterGroup,
+	mediaHandler *handler.MediaHandler,
+	jwtM *mildware.JWTAuth,
+) *gin.RouterGroup {
+	group := router.Group("/media")
+	authGroup := group.Group("/auth").Use(jwtM.LoginAutoHandler(domain.AppGuardName))
+	{
+		authGroup.POST("/image/upload", mediaHandler.ImageUpload)
+		authGroup.GET("/url", mediaHandler.GetUrlById)
+	}
 	return group
 }

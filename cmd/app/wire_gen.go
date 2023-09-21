@@ -9,6 +9,11 @@ package main
 import (
 	"go-web-wire-starter/config"
 	"go-web-wire-starter/internal/compo"
+	"go-web-wire-starter/internal/compo/storage"
+	"go-web-wire-starter/internal/compo/storage/cos"
+	"go-web-wire-starter/internal/compo/storage/kodo"
+	"go-web-wire-starter/internal/compo/storage/local"
+	"go-web-wire-starter/internal/compo/storage/oss"
 	"go-web-wire-starter/internal/dao"
 	"go-web-wire-starter/internal/handler"
 	"go-web-wire-starter/internal/mildware"
@@ -35,10 +40,34 @@ func wireApp(configuration *config.Configuration, lumberjackLogger *lumberjack.L
 	lockBuilder := compo.NewLockBuilder(client)
 	jwtService := service.NewJwtService(zapLogger, configuration, userService, jwtDao, lockBuilder)
 	userHandler := handler.NewUserHandler(zapLogger, userService, jwtService)
+	cosDriver, err := cos.NewCosDriver(configuration)
+	if err != nil {
+		cleanup()
+		return nil, nil, err
+	}
+	localDriver, err := local.NewLocalDriver(configuration)
+	if err != nil {
+		cleanup()
+		return nil, nil, err
+	}
+	ossDriver, err := oss.NewOssDriver(configuration)
+	if err != nil {
+		cleanup()
+		return nil, nil, err
+	}
+	kodoDriver, err := kodo.NewKodoDriver(configuration)
+	if err != nil {
+		cleanup()
+		return nil, nil, err
+	}
+	storageStorage := storage.NewStorage(configuration, zapLogger, cosDriver, localDriver, ossDriver, kodoDriver)
+	mediaDao := dao.NewMediaDao(data, zapLogger, storageStorage)
+	mediaService := service.NewMediaService(configuration, zapLogger, mediaDao, storageStorage)
+	mediaHandler := handler.NewMediaHandler(zapLogger, mediaService)
 	cors := mildware.NewCorsM()
 	jwtAuth := mildware.NewJWTAuthM(configuration, jwtService)
 	recovery := mildware.NewRecoveryM(lumberjackLogger)
-	engine := router.NewRouter(configuration, userHandler, cors, jwtAuth, recovery)
+	engine := router.NewRouter(configuration, userHandler, mediaHandler, cors, jwtAuth, recovery)
 	server := newHttpServer(configuration, engine)
 	app := newApp(configuration, zapLogger, server)
 	return app, func() {

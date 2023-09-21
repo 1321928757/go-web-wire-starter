@@ -32,7 +32,7 @@ func (m *JWTAuth) LoginAutoHandler(guardName string) gin.HandlerFunc {
 	return func(c *gin.Context) {
 		tokenStr := c.Request.Header.Get("Authorization")
 		if tokenStr == "" {
-			response.FailByErr(c, cErr.Unauthorized("missing Authorization header"))
+			response.FailByErr(c, cErr.Unauthorized("身份校验失败，请先登录"))
 			return
 		}
 

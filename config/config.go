@@ -6,6 +6,6 @@ type Configuration struct {
 	Database Database `mapstructure:"database" yaml:"database"`
 	Jwt      Jwt      `mapstructure:"jwt" yaml:"jwt"`
 	Redis    Redis    `mapstructure:"redis" yaml:"redis"`
-	//Storage  Storage  `mapstructure:"storage" yaml:"storage"`
-	Queue Queue `mapstructure:"queue" yaml:"queue"`
+	Storage  Storage  `mapstructure:"storage" yaml:"storage"`
+	Queue    Queue    `mapstructure:"queue" yaml:"queue"`
 }

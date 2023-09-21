@@ -7,6 +7,15 @@ import (
 	"go.uber.org/zap"
 )
 
+// 规定dao必须实现接口对于的方法
+var _ UserDaoInterface = (*UserDao)(nil)
+
+type UserDaoInterface interface {
+	FindByID(context.Context, uint64) (*domain.User, error)
+	FindByMobile(context.Context, string) (*domain.User, error)
+	Create(context.Context, *domain.User) (*domain.User, error)
+}
+
 type UserDao struct {
 	data   *Data
 	logger *zap.Logger

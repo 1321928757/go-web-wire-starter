@@ -145,3 +145,102 @@
 
 2023/09/20 10:41:08 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:33
 [1.937ms] [rows:1] SELECT * FROM `user` WHERE `user`.`mobile` = '19374798947' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/09/21 17:16:01 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:42
+[13.145ms] [rows:1] SELECT * FROM `user` WHERE `user`.`mobile` = '19374798947' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/09/21 17:16:18 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/media_dao.go:96 record not found
+[0.675ms] [rows:0] SELECT * FROM `user` WHERE `user`.`id` = 1 ORDER BY `user`.`id` LIMIT 1
+
+2023/09/21 17:16:52 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/media_dao.go:96 record not found
+[1.705ms] [rows:0] SELECT * FROM `user` WHERE `user`.`id` = 1 ORDER BY `user`.`id` LIMIT 1
+
+2023/09/21 17:16:53 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/media_dao.go:96 record not found
+[0.508ms] [rows:0] SELECT * FROM `user` WHERE `user`.`id` = 1 ORDER BY `user`.`id` LIMIT 1
+
+2023/09/21 17:16:54 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/media_dao.go:96 record not found
+[0.000ms] [rows:0] SELECT * FROM `user` WHERE `user`.`id` = 1 ORDER BY `user`.`id` LIMIT 1
+
+2023/09/21 17:17:53 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/media_dao.go:101 record not found
+[0.842ms] [rows:0] SELECT * FROM `user` WHERE `user`.`id` = 1 ORDER BY `user`.`id` LIMIT 1
+
+2023/09/21 17:17:59 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/media_dao.go:101 record not found
+[0.551ms] [rows:0] SELECT * FROM `user` WHERE `user`.`id` = 1 ORDER BY `user`.`id` LIMIT 1
+
+2023/09/21 17:18:39 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/media_dao.go:96 record not found
+[0.989ms] [rows:0] SELECT * FROM `user` WHERE `user`.`id` = 1 ORDER BY `user`.`id` LIMIT 1
+
+2023/09/21 17:20:33 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/media_dao.go:98 record not found
+[0.816ms] [rows:0] SELECT * FROM `user` WHERE `user`.`id` = 1 ORDER BY `user`.`id` LIMIT 1
+
+2023/09/21 17:20:40 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/media_dao.go:98 record not found
+[0.640ms] [rows:0] SELECT * FROM `user` WHERE `user`.`id` = 1 ORDER BY `user`.`id` LIMIT 1
+
+2023/09/21 17:27:38 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/media_dao.go:98 record not found
+[1.071ms] [rows:0] SELECT * FROM `user` WHERE `user`.`id` = 1 ORDER BY `user`.`id` LIMIT 1
+
+2023/09/21 17:35:14 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/media_dao.go:98 record not found
+[0.517ms] [rows:0] SELECT * FROM `user` WHERE `user`.`id` = 1 ORDER BY `user`.`id` LIMIT 1
+
+2023/09/21 18:22:51 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/media_dao.go:99 record not found
+[1.045ms] [rows:0] SELECT * FROM `user` WHERE `user`.`id` = 1 ORDER BY `user`.`id` LIMIT 1
+
+2023/09/21 18:23:09 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/media_dao.go:99 record not found
+[0.113ms] [rows:0] SELECT * FROM `user` WHERE `user`.`id` = 1 ORDER BY `user`.`id` LIMIT 1
+
+2023/09/21 18:24:00 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/media_dao.go:99 record not found
+[0.507ms] [rows:0] SELECT * FROM `user` WHERE `user`.`id` = 1 ORDER BY `user`.`id` LIMIT 1
+
+2023/09/21 18:24:08 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/media_dao.go:99 record not found
+[0.672ms] [rows:0] SELECT * FROM `user` WHERE `user`.`id` = 13 ORDER BY `user`.`id` LIMIT 1
+
+2023/09/21 18:24:26 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:33
+[0.708ms] [rows:1] SELECT * FROM `user` WHERE `user`.`id` = 479145645085577985 AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/09/21 18:24:30 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/media_dao.go:99 record not found
+[0.666ms] [rows:0] SELECT * FROM `user` WHERE `user`.`id` = 13 ORDER BY `user`.`id` LIMIT 1
+
+2023/09/21 18:25:02 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:42
+[2.526ms] [rows:1] SELECT * FROM `user` WHERE `user`.`mobile` = '19374798947' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/09/21 18:25:09 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/media_dao.go:99 record not found
+[0.506ms] [rows:0] SELECT * FROM `user` WHERE `user`.`id` = 13 ORDER BY `user`.`id` LIMIT 1
+
+2023/09/21 18:26:31 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/media_dao.go:55 Error 1054 (42S22): Unknown column 'disk_type' in 'field list'
+[1.170ms] [rows:0] INSERT INTO `user` (`disk_type`,`src_type`,`src`,`created_at`,`updated_at`,`id`) VALUES ('tecent_cos',1,'local/test/45a63d68-1d03-46e3-b73b-d1c81da4690f.jpg','2023-09-21 18:26:31.472','2023-09-21 18:26:31.472',479429736636896001)
+
+2023/09/21 18:26:57 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/media_dao.go:55 Error 1054 (42S22): Unknown column 'disk_type' in 'field list'
+[0.795ms] [rows:0] INSERT INTO `user` (`disk_type`,`src_type`,`src`,`created_at`,`updated_at`,`id`) VALUES ('tecent_cos',1,'local/test/3e303faf-3f59-48cc-83c5-1e85c7836217.jpg','2023-09-21 18:26:57.51','2023-09-21 18:26:57.51',479429780307989249)
+
+2023/09/21 18:28:26 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/media_dao.go:55 Error 1054 (42S22): Unknown column 'disk_type' in 'field list'
+[0.863ms] [rows:0] INSERT INTO `user` (`disk_type`,`src_type`,`src`,`created_at`,`updated_at`,`id`) VALUES ('tecent_cos',1,'local/test/7a82da4c-c4a4-415a-8fa8-818c1b119f10.jpg','2023-09-21 18:28:26.083','2023-09-21 18:28:26.083',479429928920568577)
+
+2023/09/21 18:28:57 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/media_dao.go:55 Error 1054 (42S22): Unknown column 'disk_type' in 'field list'
+[1.193ms] [rows:0] INSERT INTO `user` (`disk_type`,`src_type`,`src`,`created_at`,`updated_at`,`id`) VALUES ('tecent_cos',1,'local/test/034bcab5-1b56-4566-8186-d990b3ae2972.jpg','2023-09-21 18:28:57.179','2023-09-21 18:28:57.179',479429981080933121)
+
+2023/09/21 18:30:53 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/media_dao.go:55 Error 1054 (42S22): Unknown column 'disk_type' in 'field list'
+[0.792ms] [rows:0] INSERT INTO `user` (`disk_type`,`src_type`,`src`,`created_at`,`updated_at`,`id`) VALUES ('tecent_cos',1,'local/test/f4d03318-0cbc-4ebf-8b02-5413564833e0.jpg','2023-09-21 18:30:53.032','2023-09-21 18:30:53.032',479430175461757697)
+
+2023/09/21 18:32:14 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/media_dao.go:55 Error 1054 (42S22): Unknown column 'disk_type' in 'field list'
+[0.633ms] [rows:0] INSERT INTO `user` (`disk_type`,`src_type`,`src`,`created_at`,`updated_at`,`id`) VALUES ('tecent_cos',1,'local/test/be78a499-2d9f-4ed8-a8bf-255f05ce2957.jpg','2023-09-21 18:32:14.262','2023-09-21 18:32:14.262',479430311743083265)
+
+2023/09/21 18:33:18 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/media_dao.go:55
+[10.009ms] [rows:1] INSERT INTO `media` (`disk_type`,`src_type`,`src`,`created_at`,`updated_at`,`id`) VALUES ('tecent_cos',1,'local/test/b10cf218-3c4e-4c68-8e7a-9e60b620ef7d.jpg','2023-09-21 18:33:18.938','2023-09-21 18:33:18.938',479430420241339137)
+
+2023/09/21 18:35:37 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/media_dao.go:55
+[2.497ms] [rows:1] INSERT INTO `media` (`disk_type`,`src_type`,`src`,`created_at`,`updated_at`,`id`) VALUES ('tecent_cos',1,'local/test/af09065c-e8dc-43c9-96c4-21e83fc07ee9.jpg','2023-09-21 18:35:37.192','2023-09-21 18:35:37.192',479430652203127553)
+
+2023/09/21 18:37:25 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/media_dao.go:55
+[1.742ms] [rows:1] INSERT INTO `media` (`disk_type`,`src_type`,`src`,`created_at`,`updated_at`,`id`) VALUES ('tecent_cos',1,'local/test/e6b1a9ea-58f7-47df-bb51-883c39bc1f26.jpg','2023-09-21 18:37:25.453','2023-09-21 18:37:25.453',479430833833267969)
+
+2023/09/21 18:39:37 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/media_dao.go:104
+[0.519ms] [rows:1] SELECT * FROM `media` WHERE `media`.`id` = 13 ORDER BY `media`.`id` LIMIT 1
+
+2023/09/21 18:40:02 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/media_dao.go:104
+[0.724ms] [rows:1] SELECT * FROM `media` WHERE `media`.`id` = 479430420241339137 ORDER BY `media`.`id` LIMIT 1
+
+2023/09/21 18:42:26 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:33
+[1.168ms] [rows:1] SELECT * FROM `user` WHERE `user`.`id` = 479145645085577985 AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/09/21 18:58:16 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:33
+[0.667ms] [rows:1] SELECT * FROM `user` WHERE `user`.`id` = 479145645085577985 AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1

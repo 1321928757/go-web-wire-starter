@@ -16,6 +16,7 @@ var ProviderSet = wire.NewSet(NewRouter)
 func NewRouter(
 	conf *config.Configuration,
 	userHandler *handler.UserHandler,
+	mediaHandler *handler.MediaHandler,
 	corsM *mildware.Cors,
 	jwtM *mildware.JWTAuth,
 	recoveryM *mildware.Recovery,
@@ -43,8 +44,9 @@ func NewRouter(
 	router.Static("/storage", filepath.Join(rootDir, "storage/internal/public"))
 
 	// 注册 api 分组路由
-	router.Group("/api")
-	setUserGroupRoutes(router, userHandler, jwtM)
+	groupRouter := router.Group("/api")
+	setUserGroupRoutes(groupRouter, userHandler, jwtM)
+	setMediaGroupRoutes(groupRouter, mediaHandler, jwtM)
 
 	return router
 }

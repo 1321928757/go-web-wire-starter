@@ -2460,3 +2460,360 @@ D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0xda7d40)
 {"level":"local.info","ts":"2023-09-20 10:41:07.328","msg":"http server started"}
 {"level":"local.info","ts":"2023-09-20 10:49:41.080","msg":"http server has been stop"}
 {"level":"local.info","ts":"2023-09-20 10:49:41.080","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-21 09:35:16.693","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-21 09:35:19.754","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-21 09:35:19.755","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-21 09:35:20.899","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-21 09:35:23.828","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-21 09:35:23.829","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-21 16:32:27.651","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-21 16:32:43.586","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-21 16:32:50.418","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-21 16:34:42.377","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-21 16:51:43.803","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-21 16:52:06.978","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-21 16:52:06.978","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-21 16:52:07.766","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-21 16:54:36.521","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-21 16:54:36.521","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-21 16:54:40.138","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-21 17:01:59.744","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-21 17:01:59.745","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-21 17:02:03.453","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-21 17:02:28.566","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-21 17:02:28.566","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-21 17:02:29.342","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-21 17:03:34.122","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-21 17:03:34.122","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-21 17:03:37.729","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-21 17:13:15.882","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-21 17:13:15.883","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-21 17:13:19.703","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-21 17:14:19.871","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-21 17:14:19.871","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-21 17:14:23.736","msg":"http server started"}
+{"level":"local.error","ts":"2023-09-21 17:16:18.353","msg":"record not found"}
+{"level":"local.error","ts":"2023-09-21 17:16:52.757","msg":"record not found"}
+{"level":"local.error","ts":"2023-09-21 17:16:53.520","msg":"record not found"}
+{"level":"local.error","ts":"2023-09-21 17:16:54.868","msg":"record not found"}
+{"level":"local.info","ts":"2023-09-21 17:17:45.035","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-21 17:17:45.036","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-21 17:17:48.680","msg":"http server started"}
+{"level":"local.error","ts":"2023-09-21 17:17:53.656","msg":"record not found"}
+{"level":"local.error","ts":"2023-09-21 17:17:59.362","msg":"record not found"}
+{"level":"local.info","ts":"2023-09-21 17:18:33.338","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-21 17:18:33.338","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-21 17:18:36.973","msg":"http server started"}
+{"level":"local.error","ts":"2023-09-21 17:18:39.261","msg":"record not found"}
+{"level":"local.info","ts":"2023-09-21 17:20:27.901","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-21 17:20:27.901","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-21 17:20:31.636","msg":"http server started"}
+{"level":"local.error","ts":"2023-09-21 17:20:33.488","msg":"record not found"}
+{"level":"local.error","ts":"2023-09-21 17:20:40.661","msg":"record not found"}
+{"level":"local.error","ts":"2023-09-21 17:27:38.411","msg":"record not found"}
+{"level":"local.error","ts":"2023-09-21 17:35:14.116","msg":"record not found"}
+{"level":"local.info","ts":"2023-09-21 17:49:23.420","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-21 17:49:23.420","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-21 17:49:27.564","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-21 18:22:45.461","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-21 18:22:45.462","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-21 18:22:49.505","msg":"http server started"}
+
+
+[31m2023/09/21 18:22:51 [Recovery] 2023/09/21 - 18:22:51 panic recovered:
+GET /api/media/auth/url?id=1 HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: ea712bbb-5b09-40b7-b003-808b914ee01e
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0x77b986)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0x77b956)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/media_service.go:87 (0xff102a)
+	(*MediaService).GetUrlById: return m.Url, err
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/handler/media_handler.go:50 (0xff16c4)
+	(*MediaHandler).GetUrlById: media, err := h.mediaService.GetUrlById(c, id)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xc72a81)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0xc72a6c)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xc71ba6)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0xc71b89)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xc70c4a)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xc708d1)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xc703fc)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0xa1c475)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0xa17991)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0x797c20)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-21 18:23:06.563","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-21 18:23:06.563","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-21 18:23:07.314","msg":"http server started"}
+
+
+[31m2023/09/21 18:23:09 [Recovery] 2023/09/21 - 18:23:09 panic recovered:
+GET /api/media/auth/url?id=1 HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: 57fdf9ca-da94-4a55-a537-58775a26b4e6
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0x77b986)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0x77b956)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/media_service.go:87 (0xff102a)
+	(*MediaService).GetUrlById: return m.Url, err
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/handler/media_handler.go:50 (0xff16c4)
+	(*MediaHandler).GetUrlById: media, err := h.mediaService.GetUrlById(c, id)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xc72a81)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0xc72a6c)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xc71ba6)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0xc71b89)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xc70c4a)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xc708d1)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xc703fc)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0xa1c475)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0xa17991)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0x797c20)
+	goexit: BYTE	$0x90	// NOP
+[0m
+
+
+[31m2023/09/21 18:24:00 [Recovery] 2023/09/21 - 18:24:00 panic recovered:
+GET /api/media/auth/url?id=1 HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: 4a810c1e-4257-4dbe-a7e8-1b082870ad8b
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0x77b986)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0x77b956)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/media_service.go:87 (0xff102a)
+	(*MediaService).GetUrlById: return m.Url, err
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/handler/media_handler.go:50 (0xff16c4)
+	(*MediaHandler).GetUrlById: media, err := h.mediaService.GetUrlById(c, id)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xc72a81)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0xc72a6c)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xc71ba6)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0xc71b89)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xc70c4a)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xc708d1)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xc703fc)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0xa1c475)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0xa17991)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0x797c20)
+	goexit: BYTE	$0x90	// NOP
+[0m
+
+
+[31m2023/09/21 18:24:08 [Recovery] 2023/09/21 - 18:24:08 panic recovered:
+GET /api/media/auth/url?id=13 HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: b95466bf-76d7-4e76-90ca-a63f59c882b2
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0x77b986)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0x77b956)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/media_service.go:87 (0xff102a)
+	(*MediaService).GetUrlById: return m.Url, err
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/handler/media_handler.go:50 (0xff16c4)
+	(*MediaHandler).GetUrlById: media, err := h.mediaService.GetUrlById(c, id)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xc72a81)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0xc72a6c)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xc71ba6)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0xc71b89)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xc70c4a)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xc708d1)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xc703fc)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0xa1c475)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0xa17991)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0x797c20)
+	goexit: BYTE	$0x90	// NOP
+[0m
+
+
+[31m2023/09/21 18:24:30 [Recovery] 2023/09/21 - 18:24:30 panic recovered:
+GET /api/media/auth/url?id=13 HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: 4d51dbb4-3687-40ba-ad69-f1a4c0a10b7a
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0x77b986)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0x77b956)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/media_service.go:87 (0xff102a)
+	(*MediaService).GetUrlById: return m.Url, err
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/handler/media_handler.go:50 (0xff16c4)
+	(*MediaHandler).GetUrlById: media, err := h.mediaService.GetUrlById(c, id)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xc72a81)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0xc72a6c)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xc71ba6)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0xc71b89)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xc70c4a)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xc708d1)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xc703fc)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0xa1c475)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0xa17991)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0x797c20)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-21 18:24:45.474","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-21 18:24:45.474","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-21 18:24:46.220","msg":"http server started"}
+
+
+[31m2023/09/21 18:25:09 [Recovery] 2023/09/21 - 18:25:09 panic recovered:
+GET /api/media/auth/url?id=13 HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Authorization: *
+Cache-Control: no-cache
+Connection: keep-alive
+Postman-Token: 9069d68f-a0ec-4760-b030-18a784ff08af
+User-Agent: PostmanRuntime/7.33.0
+
+
+runtime error: invalid memory address or nil pointer dereference
+D:/Enviroment/go/src/runtime/panic.go:260 (0x77b986)
+	panicmem: panic(memoryError)
+D:/Enviroment/go/src/runtime/signal_windows.go:257 (0x77b956)
+	sigpanic: panicmem()
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/service/media_service.go:87 (0xff102a)
+	(*MediaService).GetUrlById: return m.Url, err
+D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/handler/media_handler.go:50 (0xff16c4)
+	(*MediaHandler).GetUrlById: media, err := h.mediaService.GetUrlById(c, id)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xc72a81)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 (0xc72a6c)
+	CustomRecoveryWithWriter.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xc71ba6)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 (0xc71b89)
+	LoggerWithConfig.func1: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0xc70c4a)
+	(*Context).Next: c.handlers[c.index](c)
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xc708d1)
+	(*Engine).handleHTTPRequest: c.Next()
+D:/Enviroment/go_workpace/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xc703fc)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+D:/Enviroment/go/src/net/http/server.go:2936 (0xa1c475)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+D:/Enviroment/go/src/net/http/server.go:1995 (0xa17991)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0x797c20)
+	goexit: BYTE	$0x90	// NOP
+[0m
+{"level":"local.info","ts":"2023-09-21 18:28:14.467","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-21 18:28:14.467","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-21 18:28:24.221","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-21 18:28:51.548","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-21 18:28:51.548","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-21 18:28:55.274","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-21 18:30:47.001","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-21 18:30:47.002","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-21 18:30:50.927","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-21 18:32:08.354","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-21 18:32:08.355","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-21 18:32:12.275","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-21 18:33:13.117","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-21 18:33:13.118","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-21 18:33:17.188","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-21 18:35:26.648","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-21 18:35:26.649","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-21 18:35:27.437","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-21 18:37:17.696","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-21 18:37:17.697","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-21 18:37:18.425","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-21 18:40:30.500","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-21 18:40:30.500","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-21 18:40:34.556","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-21 18:55:31.982","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-21 18:55:31.983","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-21 18:58:14.367","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-21 18:58:46.202","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-21 18:58:46.202","msg":"closing the data resources"}

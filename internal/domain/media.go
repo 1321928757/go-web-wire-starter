@@ -1,6 +1,8 @@
 package domain
 
-import "github.com/jassue/gin-wire/app/compo"
+import (
+	"go-web-wire-starter/internal/compo/storage"
+)
 
 type Media struct {
 	ID       uint64 `json:"id"`
@@ -10,12 +12,12 @@ type Media struct {
 	Url      string `json:"url"`
 }
 
-func (dm *Media) SetUrl(storage *compo.Storage) string {
+func (dm *Media) SetUrl(storage *storage.Storage) string {
 	url := ""
 
 	// 相对路径
 	if dm.SrcType == 1 {
-		disk, err := storage.GetDisk(dm.DiskType)
+		disk, err := storage.FileDriver(dm.DiskType)
 		if err != nil {
 			url = ""
 		} else {

@@ -32,13 +32,13 @@ func (u *UserHandler) Register(c *gin.Context) {
 	}
 	user, err := u.userService.Register(c, &form)
 	if err != nil {
-		response.FailByErr(c, err)
+		response.FailByBussiness(c, err.Error())
 		return
 	}
 
 	tokenData, _, err := u.jwtService.CreateToken(domain.AppGuardName, user)
 	if err != nil {
-		response.FailByErr(c, err)
+		response.FailByBussiness(c, err.Error())
 		return
 	}
 
@@ -54,13 +54,13 @@ func (h *UserHandler) Login(c *gin.Context) {
 
 	user, err := h.userService.Login(c, form.Mobile, form.Password)
 	if err != nil {
-		response.FailByErr(c, err)
+		response.FailByBussiness(c, err.Error())
 		return
 	}
 
 	tokenData, _, err := h.jwtService.CreateToken(domain.AppGuardName, user)
 	if err != nil {
-		response.FailByErr(c, err)
+		response.FailByBussiness(c, err.Error())
 		return
 	}
 
@@ -70,7 +70,7 @@ func (h *UserHandler) Login(c *gin.Context) {
 func (h *UserHandler) Info(c *gin.Context) {
 	user, err := h.userService.GetUserInfo(c, c.Keys["id"].(string))
 	if err != nil {
-		response.FailByErr(c, err)
+		response.FailByBussiness(c, err.Error())
 		return
 	}
 	response.Success(c, user)
@@ -79,15 +79,9 @@ func (h *UserHandler) Info(c *gin.Context) {
 func (h *UserHandler) Logout(c *gin.Context) {
 	err := h.jwtService.JoinBlackList(c, c.Keys["token"].(*jwt.Token))
 	if err != nil {
-		println("logout fail")
-		println("logout fail")
-		println("logout fail")
-		response.FailByErr(c, err)
+		response.FailByBussiness(c, err.Error())
 		return
 	}
-	println("logout success")
-	println("logout success")
-	println("logout success")
 
 	response.Success(c, nil)
 }

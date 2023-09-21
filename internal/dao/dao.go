@@ -6,7 +6,6 @@ import (
 	"github.com/go-redis/redis/extra/redisotel"
 	"github.com/go-redis/redis/v8"
 	"github.com/google/wire"
-	"github.com/jassue/gin-wire/app/service"
 	"github.com/sony/sonyflake"
 	"go-web-wire-starter/config"
 	"go-web-wire-starter/util/path"
@@ -25,7 +24,9 @@ import (
 )
 
 // ProviderSet Provider对象集合
-var ProviderSet = wire.NewSet(NewData, NewDB, NewRedis, NewUserDao, NewJwtDao)
+var ProviderSet = wire.NewSet(
+	NewData, NewDB, NewRedis, NewTransaction, NewUserDao, NewJwtDao, NewMediaDao,
+)
 
 type Data struct {
 	db  *gorm.DB
@@ -135,10 +136,6 @@ func NewRedis(c *config.Configuration, gLog *zap.Logger) *redis.Client {
 	if err := client.Ping(context.Background()).Err(); err != nil {
 		gLog.Error("redis connect failed, err:", zap.Any("err", err))
 		panic("failed to connect redis")
-	} else {
-		gLog.Info("redis connect success")
-		gLog.Info("redis connect success")
-		gLog.Info("redis connect success")
 	}
 
 	return client
@@ -164,7 +161,12 @@ func (d *Data) DB(ctx context.Context) *gorm.DB {
 	return d.db
 }
 
+// Transaction 新增事务接口方法
+type Transaction interface {
+	ExecTx(context.Context, func(ctx context.Context) error) error
+}
+
 // NewTransaction .
-func NewTransaction(d *Data) service.Transaction {
+func NewTransaction(d *Data) Transaction {
 	return d
 }

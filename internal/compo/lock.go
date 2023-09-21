@@ -8,6 +8,7 @@ import (
 	"time"
 )
 
+// 分布式锁
 type LockBuilder struct {
 	rdb *redis.Client
 }

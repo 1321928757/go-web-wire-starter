@@ -1,7 +1,6 @@
 package service
 
 import (
-	"context"
 	"github.com/gin-gonic/gin"
 	"go-web-wire-starter/internal/dao"
 	"go-web-wire-starter/internal/domain"
@@ -11,12 +10,6 @@ import (
 	"go.uber.org/zap"
 	"strconv"
 )
-
-type UserRepo interface {
-	FindByID(context.Context, uint64) (*domain.User, error)
-	FindByMobile(context.Context, string) (*domain.User, error)
-	Create(context.Context, *domain.User) (*domain.User, error)
-}
 
 type UserService struct {
 	logger  *zap.Logger
