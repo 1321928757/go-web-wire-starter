@@ -21,7 +21,6 @@ type LocalConfig struct {
 
 // 腾讯云cos配置
 type CosConfig struct {
-	Open      bool   `mapstructure:"open" json:"open" yaml:"open"`
 	SecretId  string `mapstructure:"secret_id" json:"secret_id" yaml:"secret_id"`
 	SecretKey string `mapstructure:"secret_key" json:"secret_key" yaml:"secret_key"`
 	Bucket    string `mapstructure:"bucket" json:"bucket" yaml:"bucket"`
@@ -32,7 +31,6 @@ type CosConfig struct {
 
 // 阿里云oss配置
 type AliConfig struct {
-	Open            bool   `mapstructure:"open" json:"open" yaml:"open"`
 	AccessKeyId     string `mapstructure:"access_key_id" json:"access_key_id" yaml:"access_key_id"`
 	AccessKeySecret string `mapstructure:"access_key_secret" json:"access_key_secret" yaml:"access_key_secret"`
 	Bucket          string `mapstructure:"bucket" json:"bucket" yaml:"bucket"`
@@ -43,7 +41,6 @@ type AliConfig struct {
 
 // 七牛云配置
 type QiNiuConfig struct {
-	Open      bool   `mapstructure:"open" json:"open" yaml:"open"`
 	AccessKey string `mapstructure:"access_key" json:"access_key" yaml:"access_key"`
 	Bucket    string `mapstructure:"bucket" json:"bucket" yaml:"bucket"`
 	Domain    string `mapstructure:"domain" json:"domain" yaml:"domain"`

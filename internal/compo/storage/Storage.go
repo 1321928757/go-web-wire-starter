@@ -58,16 +58,10 @@ func NewStorage(conf *config.Configuration, logger *zap.Logger, cos *cos.CosDriv
 		drivers: make(map[DriverName]StorageDriver),
 	}
 	// 注册存储驱动
-	storage.Register(Cos, local) // 本地
-	if conf.Storage.Drivers.TecentCos.Open {
-		storage.Register(Local, cos) // 腾讯云cos
-	}
-	if conf.Storage.Drivers.AliOss.Open {
-		storage.Register(Oss, oss) // 阿里云oss
-	}
-	if conf.Storage.Drivers.QiNiu.Open {
-		storage.Register(KoDo, kodo) // 七牛云kodo
-	}
+	storage.Register(Local, local) // 本地
+	storage.Register(Cos, cos)     // 腾讯云cos
+	storage.Register(Oss, oss)     // 阿里云oss
+	storage.Register(KoDo, kodo)   // 七牛云kodo
 
 	return storage
 }

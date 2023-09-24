@@ -26,8 +26,8 @@
 ├─router			// Http路由
 ├─static			// 静态文件（如web网页）
 ├─storage			// 项目生成的日志等文件
-│  └─logs
-└─util
+│  └─logs			// 项目日志
+└─util				// 工具
     ├─fileUtil
     ├─hash
     ├─path

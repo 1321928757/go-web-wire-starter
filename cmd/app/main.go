@@ -73,6 +73,7 @@ func main() {
 
 }
 
+// initConfig 初始化配置文件
 func initConfig() {
 	if !filepath.IsAbs(configPath) {
 		configPath = filepath.Join(rootPath, "conf", configPath)
@@ -106,6 +107,7 @@ func initConfig() {
 	})
 }
 
+// initLogger 初始化日志
 func initLogger() {
 	var level zapcore.Level  // zap 日志等级
 	var options []zap.Option // zap 配置项
