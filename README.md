@@ -39,8 +39,8 @@
 
 ## 技术栈
 
-[gin](https://gin-gonic.com/zh-cn/ "性能极好的HTTP Web 框架")
-[go-wire](https://github.com/google/wire "谷歌官方的依赖注入代码生成器")
+[gin]: https://gin-gonic.com/zh-cn/	"性能极好的HTTP Web 框架"
+[go-wire]: https://github.com/google/wire	"谷歌官方的依赖注入代码生成器"
 [gorm]: https://gorm.io/	"强大的Go语言ORM库,用于与数据库交互操作"
 [cobra]: https://github.com/spf13/cobra	"用于构建强大的命令行接口的库,可以很方便地组织命令行参数和子命令"
 [go-playground/validator]: https://github.com/go-playground/validator	"Go 结构和字段验证"
