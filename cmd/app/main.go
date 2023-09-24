@@ -4,9 +4,11 @@ import (
 	"context"
 	"fmt"
 	"github.com/fsnotify/fsnotify"
+	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
 	"go-web-wire-starter/config"
+	"go-web-wire-starter/internal/command"
 	"go-web-wire-starter/util/path"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
@@ -34,43 +36,60 @@ var (
 )
 
 func init() {
-	//解析命令行参数conf(配置文件，满足生产环境与开发环境的需求)，如果没有指定则使用默认值config.yaml
+	//  解析命令行参数conf(配置文件，满足生产环境与开发环境的需求)，如果没有指定则使用默认值config.yaml
 	pflag.StringVarP(&configPath, "conf", "", filepath.Join(rootPath, "conf", "config.yaml"), "config path, eg: --conf config.yaml")
-	//初始化日志和配置文件
-	initConfig()
-	initLogger()
+	//  初始化日志和配置文件
+	cobra.OnInitialize(func() {
+		initConfig()
+		initLogger()
+	})
 }
 
 func main() {
-	// 创建应用程序实例
-	app, cleanup, err := wireApp(conf, loggerWriter, logger)
-	if err != nil {
+	// 创建的命令行程序的根命令
+	rootCmd := &cobra.Command{
+		// 命令的名称
+		Use: "internal",
+		// 执行命令时会调用此函数
+		Run: func(cmd *cobra.Command, args []string) {
+			app, cleanup, err := wireApp(conf, loggerWriter, logger)
+			if err != nil {
+				panic(err)
+			}
+			defer cleanup()
+
+			// 启动应用
+			log.Printf("start internal %s ...", Version)
+			if err := app.Run(); err != nil {
+				panic(err)
+			}
+
+			// 等待中断信号以优雅地关闭应用
+			quit := make(chan os.Signal)
+			signal.Notify(quit, syscall.SIGINT, syscall.SIGTERM)
+			<-quit
+
+			log.Printf("shutdown internal %s ...", Version)
+
+			// 设置 5 秒的超时时间
+			ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
+			defer cancel()
+
+			// 关闭应用
+			if err := app.Stop(ctx); err != nil {
+				panic(err)
+			}
+		},
+	}
+
+	// 将待注册的子命令注册到根命令
+	command.Register(rootCmd, func() (*command.Command, func(), error) {
+		return wireCommand(conf, loggerWriter, logger)
+	})
+
+	if err := rootCmd.Execute(); err != nil {
 		panic(err)
 	}
-	defer cleanup()
-
-	// 启动应用
-	log.Printf("start internal %s ...", Version)
-	if err := app.Run(); err != nil {
-		panic(err)
-	}
-
-	// 等待中断信号以优雅地关闭应用
-	quit := make(chan os.Signal)
-	signal.Notify(quit, syscall.SIGINT, syscall.SIGTERM)
-	<-quit
-
-	log.Printf("shutdown internal %s ...", Version)
-
-	// 设置 5 秒的超时时间
-	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
-	defer cancel()
-
-	// 关闭应用
-	if err := app.Stop(ctx); err != nil {
-		panic(err)
-	}
-
 }
 
 // initConfig 初始化配置文件

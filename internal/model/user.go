@@ -5,10 +5,10 @@ import (
 )
 
 type User struct {
-	ID       uint64 `gorm:"primaryKey"`
-	Name     string `gorm:"size:30;not null;comment:用户名称"`
-	Mobile   string `gorm:"size:24;not null;index;comment:用户手机号"`
-	Password string `gorm:"not null;default:'';comment:用户密码"`
+	ID       uint64 `gorm:"column:id;primaryKey"`
+	Name     string `gorm:"column:name;size:30;not null;comment:用户名称"`
+	Mobile   string `gorm:"column:mobile;size:24;not null;index;comment:用户手机号"`
+	Password string `gorm:"column:password;not null;default:'';comment:用户密码"`
 	Timestamps
 	SoftDeletes
 }

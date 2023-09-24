@@ -19,7 +19,7 @@ database:  # 数据库配置
   driver: mysql # 数据库驱动
   host: 127.0.0.1 # 域名
   port: 3306 # 端口号
-  database: go_test # 数据库名称
+  database: migrate_test # 数据库名称
   table_prefix: # 表前缀
   username: root # 用户名
   password: lsj20030222 # 密码

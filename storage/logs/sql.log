@@ -244,3 +244,102 @@
 
 2023/09/21 18:58:16 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:33
 [0.667ms] [rows:1] SELECT * FROM `user` WHERE `user`.`id` = 479145645085577985 AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/09/23 14:42:33 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:42
+[37.285ms] [rows:1] SELECT * FROM `user` WHERE `user`.`mobile` = '19374798947' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/09/23 14:42:57 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:33
+[1.025ms] [rows:1] SELECT * FROM `user` WHERE `user`.`id` = 479145645085577985 AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/09/23 14:46:52 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/media_dao.go:55
+[13.836ms] [rows:1] INSERT INTO `media` (`disk_type`,`src_type`,`src`,`created_at`,`updated_at`,`id`) VALUES ('tecent_cos',1,'local/test/41156147-264f-4581-a019-3bbc022f4e30.jpg','2023-09-23 14:46:52.366','2023-09-23 14:46:52.366',479697536051860225)
+
+2023/09/23 14:49:34 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/media_dao.go:55
+[2.238ms] [rows:1] INSERT INTO `media` (`disk_type`,`src_type`,`src`,`created_at`,`updated_at`,`id`) VALUES ('tecent_cos',1,'local/test/65bed558-cc58-455f-8567-c44c78d7cfcb.jpg','2023-09-23 14:49:34.797','2023-09-23 14:49:34.797',479697808564179713)
+
+2023/09/23 14:50:20 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/media_dao.go:55
+[2.124ms] [rows:1] INSERT INTO `media` (`disk_type`,`src_type`,`src`,`created_at`,`updated_at`,`id`) VALUES ('tecent_cos',1,'local/test/c400a784-a264-4a7d-8d03-70f5ee1aeb42.jpg','2023-09-23 14:50:20.976','2023-09-23 14:50:20.976',479697886041363201)
+
+2023/09/23 14:51:49 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/media_dao.go:55
+[2.293ms] [rows:1] INSERT INTO `media` (`disk_type`,`src_type`,`src`,`created_at`,`updated_at`,`id`) VALUES ('tecent_cos',1,'local/test/247beba6-370e-4be7-a1e9-34f77f04e7d9.jpg','2023-09-23 14:51:49.279','2023-09-23 14:51:49.279',479698034184180481)
+
+2023/09/23 14:52:35 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/media_dao.go:55
+[1.772ms] [rows:1] INSERT INTO `media` (`disk_type`,`src_type`,`src`,`created_at`,`updated_at`,`id`) VALUES ('tecent_cos',1,'local/test/e319e55c-9bfc-4008-8eea-9acb50e4cd2c.jpg','2023-09-23 14:52:35.165','2023-09-23 14:52:35.165',479698111174824705)
+
+2023/09/23 14:53:42 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/media_dao.go:55
+[1.141ms] [rows:1] INSERT INTO `media` (`disk_type`,`src_type`,`src`,`created_at`,`updated_at`,`id`) VALUES ('tecent_cos',1,'local/test/46859698-fa7a-435b-b287-0f7b3a8fb850.jpg','2023-09-23 14:53:42.351','2023-09-23 14:53:42.351',479698223900939009)
+
+2023/09/23 14:54:03 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/media_dao.go:55
+[7.917ms] [rows:1] INSERT INTO `media` (`disk_type`,`src_type`,`src`,`created_at`,`updated_at`,`id`) VALUES ('tecent_cos',1,'local/test/1ab93f56-e522-4338-8c7d-3f982d5e93ca.jpg','2023-09-23 14:54:03.636','2023-09-23 14:54:03.636',479698259602854657)
+
+2023/09/23 14:54:30 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/media_dao.go:55
+[2.398ms] [rows:1] INSERT INTO `media` (`disk_type`,`src_type`,`src`,`created_at`,`updated_at`,`id`) VALUES ('tecent_cos',1,'local/test/6b3dc1e3-1adf-4e9c-bde5-a876aad754fe.jpg','2023-09-23 14:54:30.764','2023-09-23 14:54:30.764',479698305119441665)
+
+2023/09/23 14:57:56 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/media_dao.go:55
+[1.736ms] [rows:1] INSERT INTO `media` (`disk_type`,`src_type`,`src`,`created_at`,`updated_at`,`id`) VALUES ('tecent_cos',1,'local/test/7d2c7a0c-397e-4ef5-8bad-0cd519894b6c.jpg','2023-09-23 14:57:56.546','2023-09-23 14:57:56.546',479698650360992513)
+
+2023/09/23 15:06:37 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/media_dao.go:55
+[2.772ms] [rows:1] INSERT INTO `media` (`disk_type`,`src_type`,`src`,`created_at`,`updated_at`,`id`) VALUES ('tecent_cos',1,'local/test/f32774d2-17d4-4097-b003-a65609a37d15.jpg','2023-09-23 15:06:37.612','2023-09-23 15:06:37.612',479699524571386625)
+
+2023/09/23 15:08:19 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/media_dao.go:55
+[9.952ms] [rows:1] INSERT INTO `media` (`disk_type`,`src_type`,`src`,`created_at`,`updated_at`,`id`) VALUES ('tecent_cos',1,'local/test/bbddca9e-ba45-4c91-9966-68f710804a29.jpg','2023-09-23 15:08:19.894','2023-09-23 15:08:19.894',479699696168751873)
+
+2023/09/23 15:29:28 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/media_dao.go:55
+[2.567ms] [rows:1] INSERT INTO `media` (`disk_type`,`src_type`,`src`,`created_at`,`updated_at`,`id`) VALUES ('local',1,'local/test/41db43ce-023e-4396-a6e2-f14659e05b40.jpg','2023-09-23 15:29:28.824','2023-09-23 15:29:28.824',479701825080021761)
+
+2023/09/24 10:29:14 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/user_dao.go:42
+[37.553ms] [rows:1] SELECT * FROM `user` WHERE `user`.`mobile` = '19374798947' AND `user`.`deleted_at` IS NULL ORDER BY `user`.`id` LIMIT 1
+
+2023/09/24 10:29:29 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/dao/media_dao.go:55
+[14.164ms] [rows:1] INSERT INTO `media` (`disk_type`,`src_type`,`src`,`created_at`,`updated_at`,`id`) VALUES ('local',1,'local/test/12631887-441d-4541-b17b-35fa6968cad3.jpg','2023-09-24 10:29:29.192','2023-09-24 10:29:29.192',479816581858218753)
+
+2023/09/24 10:30:33 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/command/database.go:25
+[0.514ms] [rows:-] SELECT DATABASE()
+
+2023/09/24 10:30:33 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/command/database.go:25
+[8.028ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go_test%' ORDER BY SCHEMA_NAME='go_test' DESC,SCHEMA_NAME limit 1
+
+2023/09/24 10:30:33 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/command/database.go:25
+[4.883ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go_test' AND table_name = 'user' AND table_type = 'BASE TABLE'
+
+2023/09/24 10:30:33 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/command/database.go:25
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2023/09/24 10:30:33 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/command/database.go:25
+[0.707ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go_test%' ORDER BY SCHEMA_NAME='go_test' DESC,SCHEMA_NAME limit 1
+
+2023/09/24 10:30:33 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/command/database.go:25
+[0.515ms] [rows:-] SELECT * FROM `user` LIMIT 1
+
+2023/09/24 10:30:33 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/command/database.go:25
+[2.048ms] [rows:-] SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale , datetime_precision FROM information_schema.columns WHERE table_schema = 'go_test' AND table_name = 'user' ORDER BY ORDINAL_POSITION
+
+2023/09/24 10:30:33 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/command/database.go:25
+[41.151ms] [rows:28] ALTER TABLE `user` MODIFY COLUMN `name` varchar(30) NOT NULL COMMENT '用户名称'
+
+2023/09/24 10:30:33 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/command/database.go:25 Error 1265 (01000): Data truncated for column 'mobile' at row 1
+[37.538ms] [rows:0] ALTER TABLE `user` MODIFY COLUMN `mobile` varchar(24) NOT NULL COMMENT '用户手机号'
+
+2023/09/24 10:36:58 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/command/database.go:25
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2023/09/24 10:36:58 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/command/database.go:25
+[1.050ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'migrate_test%' ORDER BY SCHEMA_NAME='migrate_test' DESC,SCHEMA_NAME limit 1
+
+2023/09/24 10:36:58 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/command/database.go:25
+[1.249ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'migrate_test' AND table_name = 'user' AND table_type = 'BASE TABLE'
+
+2023/09/24 10:36:58 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/command/database.go:25
+[42.522ms] [rows:0] CREATE TABLE `user` (`id` bigint unsigned AUTO_INCREMENT,`name` varchar(30) NOT NULL COMMENT '用户名称',`mobile` varchar(24) NOT NULL COMMENT '用户手机号',`password` varchar(191) NOT NULL DEFAULT '' COMMENT '用户密码',`created_at` datetime(3) NULL,`updated_at` datetime(3) NULL,`deleted_at` datetime(3) NULL,PRIMARY KEY (`id`),INDEX `idx_user_deleted_at` (`deleted_at`),INDEX `idx_user_mobile` (`mobile`))
+
+2023/09/24 10:36:58 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/command/database.go:25
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2023/09/24 10:36:58 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/command/database.go:25
+[1.140ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'migrate_test%' ORDER BY SCHEMA_NAME='migrate_test' DESC,SCHEMA_NAME limit 1
+
+2023/09/24 10:36:58 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/command/database.go:25
+[0.855ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'migrate_test' AND table_name = 'media' AND table_type = 'BASE TABLE'
+
+2023/09/24 10:36:58 D:/GoLandProjects/go-web-wire-starter-v1.0.0/internal/command/database.go:25
+[34.005ms] [rows:0] CREATE TABLE `media` (`id` bigint unsigned AUTO_INCREMENT,`disk_type` varchar(20) NOT NULL COMMENT '存储类型',`src_type` tinyint NOT NULL COMMENT '链接类型 1相对路径 2外链',`src` longtext NOT NULL COMMENT '资源链接',`created_at` datetime(3) NULL,`updated_at` datetime(3) NULL,PRIMARY KEY (`id`),INDEX `idx_media_disk_type` (`disk_type`))

@@ -6,6 +6,7 @@ package main
 import (
 	"github.com/google/wire"
 	"go-web-wire-starter/config"
+	"go-web-wire-starter/internal/command"
 	"go-web-wire-starter/internal/compo"
 	"go-web-wire-starter/internal/dao"
 	"go-web-wire-starter/internal/handler"
@@ -30,4 +31,9 @@ func wireApp(*config.Configuration, *lumberjack.Logger, *zap.Logger) (*App, func
 			newApp,
 		),
 	)
+}
+
+// wireCommand init application.
+func wireCommand(*config.Configuration, *lumberjack.Logger, *zap.Logger) (*command.Command, func(), error) {
+	panic(wire.Build(command.ProviderSet))
 }

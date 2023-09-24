@@ -8,6 +8,7 @@ package main
 
 import (
 	"go-web-wire-starter/config"
+	"go-web-wire-starter/internal/command"
 	"go-web-wire-starter/internal/compo"
 	"go-web-wire-starter/internal/compo/storage"
 	"go-web-wire-starter/internal/compo/storage/cos"
@@ -72,5 +73,14 @@ func wireApp(configuration *config.Configuration, lumberjackLogger *lumberjack.L
 	app := newApp(configuration, zapLogger, server)
 	return app, func() {
 		cleanup()
+	}, nil
+}
+
+// wireCommand init application.
+func wireCommand(configuration *config.Configuration, lumberjackLogger *lumberjack.Logger, zapLogger *zap.Logger) (*command.Command, func(), error) {
+	db := dao.NewDB(configuration, zapLogger)
+	dataBaseCommand := command.NewDataBaseCommand(zapLogger, db)
+	commandCommand := command.NewCommand(dataBaseCommand)
+	return commandCommand, func() {
 	}, nil
 }
