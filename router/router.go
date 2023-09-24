@@ -17,6 +17,7 @@ func NewRouter(
 	conf *config.Configuration,
 	userHandler *handler.UserHandler,
 	mediaHandler *handler.MediaHandler,
+	captchaHandler *handler.CaptchaHandler,
 	corsM *mildware.Cors,
 	jwtM *mildware.JWTAuth,
 	recoveryM *mildware.Recovery,
@@ -47,6 +48,7 @@ func NewRouter(
 	groupRouter := router.Group("/api")
 	setUserGroupRoutes(groupRouter, userHandler, jwtM)
 	setMediaGroupRoutes(groupRouter, mediaHandler, jwtM)
+	setCaptchaGroupRoutes(groupRouter, captchaHandler, jwtM)
 
 	return router
 }

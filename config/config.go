@@ -8,4 +8,6 @@ type Configuration struct {
 	Redis    Redis    `mapstructure:"redis" yaml:"redis"`
 	Storage  Storage  `mapstructure:"storage" yaml:"storage"`
 	Queue    Queue    `mapstructure:"queue" yaml:"queue"`
+	Email    Email    `mapstructure:"email" yaml:"email"`
+	Captcha  Captcha  `mapstructure:"captcha" yaml:"captcha"`
 }

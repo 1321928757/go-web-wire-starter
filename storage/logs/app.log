@@ -2920,3 +2920,18 @@ D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0xfa7c20)
 {"level":"local.info","ts":"2023-09-24 10:28:37.929","msg":"http server started"}
 {"level":"local.info","ts":"2023-09-24 10:29:38.634","msg":"http server has been stop"}
 {"level":"local.info","ts":"2023-09-24 10:29:38.635","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-24 16:22:31.954","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-24 16:22:38.667","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-24 16:22:38.667","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-24 16:22:46.324","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-24 16:24:22.095","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-24 16:24:22.095","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-24 16:25:16.417","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-24 16:27:17.543","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-24 16:27:17.543","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-24 16:27:24.872","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-24 16:42:37.902","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-24 16:42:37.902","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-24 16:42:43.913","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-24 16:46:22.265","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-24 16:46:22.265","msg":"closing the data resources"}

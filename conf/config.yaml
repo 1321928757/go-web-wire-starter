@@ -82,10 +82,13 @@ email: # 邮件配置
   max_timeout: 20  # 最大超时时间（s）
 
 captcha: #验证码配置
+  captcha_prefix: captcha # 验证码缓存key前缀,方便管理和区分
   email_number: 4 #邮箱验证码位数
-  email_timeout: 300 #  邮箱验证码有效期(秒)
+  email_expire: 300 #  邮箱验证码有效期(秒)
+  email_interval: 60 # 邮箱验证码发送间隔(秒)
   figure_number: 4 #图形验证码位数
-  figure_timeout: 120 # 图形验证码有效期(秒)
+  figure_expire: 120 # 图形验证码有效期(秒)
+
 
 
 

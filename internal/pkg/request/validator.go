@@ -2,35 +2,30 @@ package request
 
 import (
 	"github.com/go-playground/validator/v10"
-	cErr "go-web-wire-starter/internal/pkg/error"
-	"regexp"
 )
 
+// Gin 自带验证器返回的错误信息格式不太友好，故在此自定义错误信息
 type Validator interface {
 	GetMessages() ValidatorMessages
 }
 
 type ValidatorMessages map[string]string
 
-var reg = regexp.MustCompile(`\[\d\]`)
-
-// GetError 获取验证错误
-func GetError(request interface{}, err error) *cErr.Error {
+// GetErrorMsg 获取错误信息
+func GetErrorMsg(request interface{}, err error) string {
 	if _, isValidatorErrors := err.(validator.ValidationErrors); isValidatorErrors {
 		_, isValidator := request.(Validator)
 
 		for _, v := range err.(validator.ValidationErrors) {
 			// 若 request 结构体实现 Validator 接口即可实现自定义错误信息
 			if isValidator {
-				field := v.Field() // 取 request 结构体字段的 'vn' tag 值，未设置 tag 则默认为字段名
-				field = reg.ReplaceAllString(field, ".*")
-				if message, exist := request.(Validator).GetMessages()[field+"."+v.Tag()]; exist {
-					return cErr.ValidateErr(message)
+				if message, exist := request.(Validator).GetMessages()[v.Field()+"."+v.Tag()]; exist {
+					return message
 				}
 			}
-			return cErr.ValidateErr(v.Error())
+			return v.Error()
 		}
 	}
 
-	return cErr.ValidateErr("Parameter error")
+	return "参数错误"
 }

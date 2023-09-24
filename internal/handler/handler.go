@@ -5,4 +5,4 @@ import (
 )
 
 // ProviderSet Provider对象集合
-var ProviderSet = wire.NewSet(NewUserHandler, NewMediaHandler)
+var ProviderSet = wire.NewSet(NewUserHandler, NewMediaHandler, NewCaptchaHandler)

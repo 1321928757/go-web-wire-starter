@@ -40,3 +40,14 @@ func setMediaGroupRoutes(
 	}
 	return group
 }
+
+// 设置验证码路由
+func setCaptchaGroupRoutes(
+	router *gin.RouterGroup,
+	captchaHandler *handler.CaptchaHandler,
+	jwtM *mildware.JWTAuth,
+) *gin.RouterGroup {
+	group := router.Group("/captcha")
+	group.GET("/send_email", captchaHandler.SendEmailCaptcha)
+	return group
+}

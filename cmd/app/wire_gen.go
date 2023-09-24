@@ -10,6 +10,7 @@ import (
 	"go-web-wire-starter/config"
 	"go-web-wire-starter/internal/command"
 	"go-web-wire-starter/internal/compo"
+	"go-web-wire-starter/internal/compo/email"
 	"go-web-wire-starter/internal/compo/storage"
 	"go-web-wire-starter/internal/compo/storage/cos"
 	"go-web-wire-starter/internal/compo/storage/kodo"
@@ -65,10 +66,14 @@ func wireApp(configuration *config.Configuration, lumberjackLogger *lumberjack.L
 	mediaDao := dao.NewMediaDao(data, zapLogger, storageStorage)
 	mediaService := service.NewMediaService(configuration, zapLogger, mediaDao, storageStorage)
 	mediaHandler := handler.NewMediaHandler(zapLogger, mediaService)
+	pool := email.NewEmailPool(configuration, zapLogger)
+	emailDriver := email.NewEmailDriver(pool, configuration)
+	captchaService := service.NewCaptchaService(configuration, zapLogger, emailDriver, client)
+	captchaHandler := handler.NewCaptchaHandler(zapLogger, captchaService)
 	cors := mildware.NewCorsM()
 	jwtAuth := mildware.NewJWTAuthM(configuration, jwtService)
 	recovery := mildware.NewRecoveryM(lumberjackLogger)
-	engine := router.NewRouter(configuration, userHandler, mediaHandler, cors, jwtAuth, recovery)
+	engine := router.NewRouter(configuration, userHandler, mediaHandler, captchaHandler, cors, jwtAuth, recovery)
 	server := newHttpServer(configuration, engine)
 	app := newApp(configuration, zapLogger, server)
 	return app, func() {

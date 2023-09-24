@@ -27,7 +27,7 @@ func NewUserHandler(logger *zap.Logger, userService *service.UserService, jwtSer
 func (u *UserHandler) Register(c *gin.Context) {
 	var form request.Register
 	if err := c.ShouldBindJSON(&form); err != nil {
-		response.FailByErr(c, request.GetError(form, err))
+		response.FailByParams(c, request.GetErrorMsg(form, err))
 		return
 	}
 	user, err := u.userService.Register(c, &form)
@@ -48,7 +48,7 @@ func (u *UserHandler) Register(c *gin.Context) {
 func (h *UserHandler) Login(c *gin.Context) {
 	var form request.Login
 	if err := c.ShouldBindJSON(&form); err != nil {
-		response.FailByErr(c, request.GetError(form, err))
+		response.FailByParams(c, request.GetErrorMsg(form, err))
 		return
 	}
 

@@ -2,16 +2,15 @@ package str
 
 import (
 	"math/rand"
-	"time"
 )
 
-// RandString 生成随机字符串，可用来作为标识符
-func RandString(len int) string {
-	r := rand.New(rand.NewSource(time.Now().UnixNano()))
-	bytes := make([]byte, len)
-	for i := 0; i < len; i++ {
-		b := r.Intn(26) + 65
-		bytes[i] = byte(b)
+const letterBytes = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+
+// RandString 生成长度为n的随机字符串，可用来作为标识符
+func RandString(n int) string {
+	b := make([]byte, n)
+	for i := range b {
+		b[i] = letterBytes[rand.Intn(len(letterBytes))]
 	}
-	return string(bytes)
+	return string(b)
 }

@@ -1,8 +1,12 @@
 package config
 
 type App struct {
-	Env     string `mapstructure:"env" yaml:"env"`
-	Port    string `mapstructure:"port" yaml:"port"`
+	// 当前开发环境
+	Env string `mapstructure:"env" yaml:"env"`
+	// 服务端口
+	Port string `mapstructure:"port" yaml:"port"`
+	// 服务名称
 	AppName string `mapstructure:"app_name" yaml:"app_name"`
-	AppUrl  string `mapstructure:"app_url" yaml:"app_url"`
+	// 服务地址
+	AppUrl string `mapstructure:"app_url" yaml:"app_url"`
 }

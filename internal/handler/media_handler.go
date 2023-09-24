@@ -25,7 +25,7 @@ func NewMediaHandler(logger *zap.Logger, mediaService *service.MediaService) *Me
 func (h *MediaHandler) ImageUpload(c *gin.Context) {
 	var form request.ImageUpload
 	if err := c.ShouldBind(&form); err != nil {
-		response.FailByErr(c, request.GetError(form, err))
+		response.FailByParams(c, request.GetErrorMsg(form, err))
 		return
 	}
 

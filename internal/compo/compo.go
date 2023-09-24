@@ -2,6 +2,7 @@ package compo
 
 import (
 	"github.com/google/wire"
+	"go-web-wire-starter/internal/compo/email"
 	"go-web-wire-starter/internal/compo/storage"
 	"go-web-wire-starter/internal/compo/storage/cos"
 	"go-web-wire-starter/internal/compo/storage/kodo"
@@ -13,9 +14,11 @@ import (
 var ProviderSet = wire.NewSet(
 	NewSonyFlake,
 	NewLockBuilder,
-	storage.NewStorage,
 	cos.NewCosDriver,
 	local.NewLocalDriver,
 	oss.NewOssDriver,
 	kodo.NewKodoDriver,
+	storage.NewStorage,
+	email.NewEmailPool,
+	email.NewEmailDriver,
 )
