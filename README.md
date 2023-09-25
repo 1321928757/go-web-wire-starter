@@ -11,6 +11,10 @@
 │  └─app			
 ├─conf				// 配置文件
 ├─config			// 配置映射模型
+├─example			// 示例代码
+│  ├─captcha		// 行为验证码vue示例
+│  ├─email			// 邮件功能示例
+│  └─storage		// 文件存储功能示例
 ├─internal			// 核心目录
 │  ├─compo			// 其他组件
 │  ├─dao			// dao数据层

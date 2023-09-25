@@ -86,8 +86,7 @@ captcha: #验证码配置
   email_number: 4 #邮箱验证码位数
   email_expire: 300 #  邮箱验证码有效期(秒)
   email_interval: 60 # 邮箱验证码发送间隔(秒)
-  figure_number: 4 #图形验证码位数
-  figure_expire: 120 # 图形验证码有效期(秒)
+  figure_expire: 120 # 图形点击验证码有效期(秒)
 
 
 

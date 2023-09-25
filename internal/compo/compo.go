@@ -21,4 +21,5 @@ var ProviderSet = wire.NewSet(
 	storage.NewStorage,
 	email.NewEmailPool,
 	email.NewEmailDriver,
+	NewCaptchaCompo,
 )

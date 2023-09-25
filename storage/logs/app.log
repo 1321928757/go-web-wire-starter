@@ -2954,3 +2954,23 @@ D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0xfa7c20)
 {"level":"local.info","ts":"2023-09-24 17:16:59.213","msg":"http server has been stop"}
 {"level":"local.info","ts":"2023-09-24 17:16:59.213","msg":"closing the data resources"}
 {"level":"local.info","ts":"2023-09-24 17:17:03.497","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-24 17:26:15.034","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-24 17:26:15.034","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-24 21:39:47.171","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-24 22:12:22.928","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-24 22:12:22.928","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-24 22:12:29.821","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-24 22:25:18.901","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-24 22:25:18.901","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-24 22:25:25.980","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-24 22:37:32.113","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-24 22:37:32.113","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-25 08:11:34.474","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-25 08:17:09.478","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-25 08:17:09.478","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-25 08:17:59.059","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-25 08:32:43.050","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-25 08:32:43.051","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-25 08:32:48.351","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-25 08:43:07.130","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-25 08:43:07.131","msg":"closing the data resources"}

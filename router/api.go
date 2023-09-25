@@ -49,5 +49,7 @@ func setCaptchaGroupRoutes(
 ) *gin.RouterGroup {
 	group := router.Group("/captcha")
 	group.GET("/send_email", captchaHandler.SendEmailCaptcha)
+	group.GET("/get_click_captcha", captchaHandler.GetClickImgCaptcha)
+	group.POST("/check_click_captcha", captchaHandler.CheckClickImgCaptcha)
 	return group
 }
