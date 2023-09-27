@@ -22,7 +22,7 @@ database:  # 数据库配置
   database: migrate_test # 数据库名称
   table_prefix: # 表前缀
   username: root # 用户名
-  password: lsj20030222 # 密码
+  password: xxxx # 密码
   charset: utf8mb4 # 编码格式
   max_idle_conns: 10 # 连接池的最大空闲连接数,空闲连接是指没有被使用的连接
   max_open_conns: 100 # 连接池的最大打开连接数,打开连接是指当前正在被请求使用的连接数量
@@ -74,8 +74,8 @@ storage: # 存储配置
 
 email: # 邮件配置
   sender_name: kitie # 发件人名称
-  sender_email: 1321928757@qq.com # 发件人邮箱
-  sender_password: xmysseozfhnsiieb # 发件人密码
+  sender_email: xxxxx # 发件人邮箱
+  sender_password: xxxxxxxx # 发件人密码
   host: smtp.qq.com # smtp服务器地址
   port: 587 # smtp服务器端口
   max_connection: 4 # 最大并发SMTP连接数
