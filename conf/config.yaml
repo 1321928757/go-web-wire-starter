@@ -88,6 +88,10 @@ captcha: #验证码配置
   email_interval: 60 # 邮箱验证码发送间隔(秒)
   figure_expire: 120 # 图形点击验证码有效期(秒)
 
+limiter: # 限流配置
+  capacity: 200 # 令牌桶容量
+  rate: 50 # 令牌桶填充速率(多久填充一个令牌，单位为毫秒)
+
 
 
 

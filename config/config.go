@@ -10,4 +10,5 @@ type Configuration struct {
 	Queue    Queue    `mapstructure:"queue" yaml:"queue"`
 	Email    Email    `mapstructure:"email" yaml:"email"`
 	Captcha  Captcha  `mapstructure:"captcha" yaml:"captcha"`
+	Limiter  Limiter  `mapstructure:"limiter" yaml:"limiter"`
 }
