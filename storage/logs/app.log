@@ -2974,3 +2974,50 @@ D:/Enviroment/go/src/runtime/asm_amd64.s:1598 (0xfa7c20)
 {"level":"local.info","ts":"2023-09-25 08:32:48.351","msg":"http server started"}
 {"level":"local.info","ts":"2023-09-25 08:43:07.130","msg":"http server has been stop"}
 {"level":"local.info","ts":"2023-09-25 08:43:07.131","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-25 09:29:20.833","msg":"cron server started"}
+{"level":"local.info","ts":"2023-09-25 09:29:20.833","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-25 09:29:25.009","msg":"hello"}
+{"level":"local.info","ts":"2023-09-25 09:29:30.006","msg":"hello"}
+{"level":"local.info","ts":"2023-09-25 09:29:35.012","msg":"hello"}
+{"level":"local.info","ts":"2023-09-25 09:29:40.003","msg":"hello"}
+{"level":"local.info","ts":"2023-09-25 09:29:45.004","msg":"hello"}
+{"level":"local.info","ts":"2023-09-25 09:29:50.008","msg":"hello"}
+{"level":"local.info","ts":"2023-09-25 09:29:55.013","msg":"hello"}
+{"level":"local.info","ts":"2023-09-25 09:30:00.012","msg":"hello"}
+{"level":"local.info","ts":"2023-09-25 09:30:05.004","msg":"hello"}
+{"level":"local.info","ts":"2023-09-25 09:30:10.003","msg":"hello"}
+{"level":"local.info","ts":"2023-09-25 09:30:15.006","msg":"hello"}
+{"level":"local.info","ts":"2023-09-25 09:30:20.001","msg":"hello"}
+{"level":"local.info","ts":"2023-09-25 09:30:25.001","msg":"hello"}
+{"level":"local.info","ts":"2023-09-25 09:30:28.966","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-25 09:30:28.967","msg":"cron server has been stop"}
+{"level":"local.info","ts":"2023-09-25 09:30:28.967","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-25 09:30:34.667","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-25 09:30:34.667","msg":"cron server started"}
+{"level":"local.info","ts":"2023-09-25 09:30:35.010","msg":"hello"}
+{"level":"local.info","ts":"2023-09-25 09:30:40.012","msg":"hello"}
+{"level":"local.info","ts":"2023-09-25 09:30:45.013","msg":"hello"}
+{"level":"local.info","ts":"2023-09-25 09:30:50.012","msg":"hello"}
+{"level":"local.info","ts":"2023-09-25 09:30:55.005","msg":"hello"}
+{"level":"local.info","ts":"2023-09-25 09:31:00.006","msg":"hello"}
+{"level":"local.info","ts":"2023-09-25 09:31:05.005","msg":"hello"}
+{"level":"local.info","ts":"2023-09-25 09:31:10.012","msg":"hello"}
+{"level":"local.info","ts":"2023-09-25 09:31:15.006","msg":"hello"}
+{"level":"local.info","ts":"2023-09-25 09:31:18.410","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-25 09:31:18.411","msg":"cron server has been stop"}
+{"level":"local.info","ts":"2023-09-25 09:31:18.411","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-25 09:31:23.936","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-25 09:31:23.936","msg":"cron server started"}
+{"level":"local.info","ts":"2023-09-25 09:35:33.928","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-25 09:35:33.928","msg":"cron server has been stop"}
+{"level":"local.info","ts":"2023-09-25 09:35:33.928","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-27 10:15:52.580","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-27 10:15:52.580","msg":"cron server started"}
+{"level":"local.info","ts":"2023-09-27 10:17:15.823","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-27 10:17:15.824","msg":"cron server has been stop"}
+{"level":"local.info","ts":"2023-09-27 10:17:15.824","msg":"closing the data resources"}
+{"level":"local.info","ts":"2023-09-27 10:17:24.168","msg":"http server started"}
+{"level":"local.info","ts":"2023-09-27 10:17:24.168","msg":"cron server started"}
+{"level":"local.info","ts":"2023-09-27 10:17:47.437","msg":"http server has been stop"}
+{"level":"local.info","ts":"2023-09-27 10:17:47.438","msg":"cron server has been stop"}
+{"level":"local.info","ts":"2023-09-27 10:17:47.438","msg":"closing the data resources"}

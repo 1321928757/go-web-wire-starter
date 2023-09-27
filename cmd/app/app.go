@@ -6,6 +6,7 @@ import (
 	"github.com/gin-gonic/gin/binding"
 	"github.com/go-playground/validator/v10"
 	"go-web-wire-starter/config"
+	"go-web-wire-starter/internal/compo/cron"
 	validator2 "go-web-wire-starter/util/validator"
 	"go.uber.org/zap"
 	"net/http"
@@ -21,6 +22,8 @@ type App struct {
 	logger *zap.Logger
 	// 应用程序的 http 服务器
 	httpSrv *http.Server
+	// 应用程序的 cron 定时服务
+	cronSrv *cron.Cron
 }
 
 func newHttpServer(
@@ -39,11 +42,13 @@ func newApp(
 	conf *config.Configuration,
 	logger *zap.Logger,
 	httpSrv *http.Server,
+	cronSrv *cron.Cron,
 ) *App {
 	return &App{
 		conf:    conf,
 		logger:  logger,
 		httpSrv: httpSrv,
+		cronSrv: cronSrv,
 	}
 }
 
@@ -76,6 +81,12 @@ func (a *App) Run() error {
 	}()
 
 	//启动其他服务，如cron定时器，queue队列消费者等
+	go func() {
+		a.logger.Info("cron server started")
+		if err := a.cronSrv.Run(); err != nil {
+			panic(err)
+		}
+	}()
 
 	return nil
 }
@@ -89,6 +100,10 @@ func (a *App) Stop(ctx context.Context) error {
 	}
 
 	//关闭其他服务，如cron定时器，queue队列消费者等
+	a.logger.Info("cron server has been stop")
+	if err := a.cronSrv.Stop(ctx); err != nil {
+		return err
+	}
 
 	return nil
 }

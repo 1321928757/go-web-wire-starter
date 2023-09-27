@@ -21,6 +21,7 @@ func NewRouter(
 	corsM *mildware.Cors,
 	jwtM *mildware.JWTAuth,
 	recoveryM *mildware.Recovery,
+	limiterM *mildware.Limiter,
 ) *gin.Engine {
 	if conf.App.Env == "production" {
 		gin.SetMode(gin.ReleaseMode)
@@ -33,7 +34,7 @@ func NewRouter(
 	router.Use(corsM.Handler())
 
 	// 限流处理
-	//router.Use(limiterM.Handler())
+	router.Use(limiterM.Handler())
 
 	rootDir := path.RootPath()
 	// 前端项目静态资源

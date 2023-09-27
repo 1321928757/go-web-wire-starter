@@ -10,6 +10,7 @@ import (
 	"go-web-wire-starter/config"
 	"go-web-wire-starter/internal/command"
 	"go-web-wire-starter/internal/compo"
+	"go-web-wire-starter/internal/compo/cron"
 	"go-web-wire-starter/internal/compo/email"
 	"go-web-wire-starter/internal/compo/storage"
 	"go-web-wire-starter/internal/compo/storage/cos"
@@ -74,9 +75,13 @@ func wireApp(configuration *config.Configuration, lumberjackLogger *lumberjack.L
 	cors := mildware.NewCorsM()
 	jwtAuth := mildware.NewJWTAuthM(configuration, jwtService)
 	recovery := mildware.NewRecoveryM(lumberjackLogger)
-	engine := router.NewRouter(configuration, userHandler, mediaHandler, captchaHandler, cors, jwtAuth, recovery)
+	limiterManager := compo.NewLimiterManager()
+	limiter := mildware.NewLimiterM(limiterManager)
+	engine := router.NewRouter(configuration, userHandler, mediaHandler, captchaHandler, cors, jwtAuth, recovery, limiter)
 	server := newHttpServer(configuration, engine)
-	app := newApp(configuration, zapLogger, server)
+	exampleJob := cron.NewExampleJob(zapLogger)
+	cronCron := cron.NewCron(data, zapLogger, exampleJob)
+	app := newApp(configuration, zapLogger, server, cronCron)
 	return app, func() {
 		cleanup()
 	}, nil
