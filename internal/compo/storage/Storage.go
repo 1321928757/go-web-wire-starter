@@ -95,17 +95,17 @@ func (storage *Storage) GetDriverByName(name DriverName) (StorageDriver, error) 
 }
 
 // 使用过程中获取存储驱动实例的统一入口
-func (storage *Storage) FileDriver(disk ...string) (StorageDriver, error) {
+func (storage *Storage) FileDriver(driverNames ...DriverName) (StorageDriver, error) {
 	// 若未传参，默认使用配置文件驱动
 	// 读取默认配置
-	diskNameStr := storage.conf.Storage.Default
+	defaultDriverNameStr := storage.conf.Storage.Default
 	// 将str字符转换为自定义的DriverName类型
-	diskName := DriverName(diskNameStr)
+	defaultDriver := DriverName(defaultDriverNameStr)
 	// 若传参，使用传参的驱动名
-	if len(disk) > 0 {
-		diskName = DriverName(disk[0])
+	if len(driverNames) > 0 {
+		defaultDriver = driverNames[0]
 	}
-	s, err := storage.GetDriverByName(diskName)
+	s, err := storage.GetDriverByName(defaultDriver)
 	if err != nil {
 		return nil, err
 	}

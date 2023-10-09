@@ -105,4 +105,98 @@
   $ go run cmd/app/main.go cmd/app/wire_gen.go cmd/app/app.go
   ```
 
-  
+
+
+
+## 文件存储功能示例
+
+这里我们以项目中的media_service.go的代码为例，需要使用到internal/compo/中的storage.Storage
+
+```go
+type MediaService struct {
+    conf     *config.Configuration
+    log      *zap.Logger
+    mediaDao *dao.MediaDao
+    storage  *storage.Storage
+}
+
+// NewMediaService .
+func NewMediaService(conf *config.Configuration, log *zap.Logger, mediaDao *dao.MediaDao,
+    s *storage.Storage) *MediaService {
+    return &MediaService{conf: conf, log: log, mediaDao: mediaDao, storage: s}
+}
+```
+
+1.FileDriver()获取对应存储驱动
+
+func (storage *Storage) FileDriver(disk ...string) (StorageDriver, error)
+
+可传入参数disk选择存储驱动，若不填，则使用配置中的默认驱动
+
+```go
+// 获取默认驱动（可通过修改Storage.default配置）
+disk, err := s.storage.FileDriver()
+// 获取腾讯云Cos存储驱动
+disk, err := s.storage.FileDriver(storage.Cos)
+// 获取七牛云Kodo存储驱动
+disk, err := s.storage.FileDriver(storage.KoDo)
+// 获取阿里云Oss服务
+disk, err := s.storage.FileDriver(storage.Oss)
+```
+
+
+
+存储驱动方法
+
+```go
+	// Put 上传文件
+	Put(key string, r io.Reader, dataLength int64) error
+	// PutFile 上传本地文件
+	PutFile(key string, localFile string) error
+	// Get 获取文件
+	Get(key string) (io.ReadCloser, error)
+	// Rename 重命名文件
+	Rename(srcKey string, destKey string) error
+	// Copy 复制文件
+	Copy(srcKey string, destKey string) error
+	// Exists 判断文件是否存在
+	Exists(key string) (bool, error)
+	// Size 获取文件大小
+	Size(key string) (int64, error)
+	// Delete 删除文件
+	Delete(key string) error
+	// Url 获取文件访问URL
+	Url(key string) string
+```
+
+
+
+简单使用示例
+
+```go
+	// 读取文件
+	file, err := params.Image.Open()
+	defer file.Close()
+	if err != nil {
+		return nil, cErr.BadRequest("上传失败")
+	}
+
+	// 获取存储驱动
+	disk, err := s.storage.FileDriver(storage.Oss)
+	if err != nil {
+		return nil, cErr.BadRequest(s.storage.GetDefaultDiskType() + "disk not found")
+	}
+	// 生成路径和文件名
+	key := s.makeFaceDir(params.Business) + "/" + s.HashName(params.Image.Filename)
+	// 上传文件到本地（服务器）
+	err = disk.Put(key, file, params.Image.Size)
+	if err != nil {
+		return nil, cErr.BadRequest("上传失败")
+	}
+```
+
+
+
+## 邮件功能示例
+
+## 行为验证码示例
