@@ -225,4 +225,59 @@ disk, err := s.storage.FileDriver(storage.Oss)
 
 ## 邮件功能示例
 
+1.配置邮箱服务信息：
+
+```yaml
+# conf/config.yaml
+email: # 邮件配置
+  sender_name: kitie # 发件人名称
+  sender_email: xxxxx # 发件人邮箱
+  sender_password: xxxxxxxx # 发件人密码
+  host: smtp.qq.com # smtp服务器地址
+  port: 587 # smtp服务器端口
+  max_connection: 4 # 最大并发SMTP连接数
+  max_timeout: 20  # 最大超时时间（s）
+```
+
+2.使用到的对象为email.EmailDriver，我们这里以CaptchaService验证码服务层举例：// 验证码服务层
+
+```go
+type CaptchaService struct {
+    conf    *config.Configuration
+    log     *zap.Logger
+    email   *email.EmailDriver //邮件服务驱动
+    rdb     *redis.Client
+    captcha *compo.CaptchaCompo
+}
+
+func NewCaptchaService(conf *config.Configuration, log *zap.Logger,
+    email *email.EmailDriver, rdb *redis.Client, captcha *compo.CaptchaCompo) *CaptchaService {
+    return &CaptchaService{conf: conf, log: log, email: email, rdb: rdb, captcha: captcha}
+}
+```
+
+3.发送邮件
+
+```go
+// email为目标邮箱地址，title为邮箱标题，content为邮箱内容
+err := s.email.SendRegisterMail(email, title, content)
+```
+
+
+
 ## 行为验证码示例
+
+验证码前端界面可参考example/captcha/案例（vue编写）
+
+安装依赖
+
+```
+npm install 
+```
+
+运行项目
+
+```
+npm run serve
+```
+
