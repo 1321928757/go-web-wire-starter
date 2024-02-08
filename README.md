@@ -285,3 +285,9 @@ npm install
 npm run serve
 ```
 
+go-wire依赖注入代码生成（在cmd/app/目录下）
+
+```
+wire gen wire.go
+```
+
