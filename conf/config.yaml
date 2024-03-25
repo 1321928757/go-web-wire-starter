@@ -4,6 +4,7 @@ internal: # 应用基本配置
   app_name: online-practice-system # 应用名称
   app_url: http://localhost # 应用域名
 
+
 log:  # 日志配置
   level: info # 日志等级
   root_dir: ./storage/logs # 日志根目录
